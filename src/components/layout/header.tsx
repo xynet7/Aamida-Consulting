@@ -52,7 +52,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild variant="secondary">
+          <Button asChild>
             <Link href="/contact">Schedule a Consultation</Link>
           </Button>
           <div className="md:hidden">
@@ -92,7 +92,7 @@ export function Header() {
                     ))}
                   </nav>
                   <div className="mt-auto p-4">
-                    <Button asChild className="w-full" onClick={closeMobileMenu} variant="secondary">
+                    <Button asChild className="w-full" onClick={closeMobileMenu}>
                       <Link href="/contact">Schedule a Consultation</Link>
                     </Button>
                   </div>
