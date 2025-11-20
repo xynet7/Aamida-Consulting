@@ -12,19 +12,19 @@ const contactDetails = [
     {
       Icon: Mail,
       title: "Email",
-      value: "contact@aamida.com",
-      href: "mailto:contact@aamida.com",
+      value: "info@aamidainfotech.com",
+      href: "mailto:info@aamidainfotech.com",
     },
     {
       Icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 80108 81075",
+      href: "tel:+918010881075",
     },
     {
       Icon: MapPin,
       title: "Address",
-      value: "123 Business Bay, Suite 404, New York, NY",
+      value: "Plot No. 15, Vasantnagar, near Ganesh mandir, Adai, Panvel, Navi Mumbai, Raigad, Maharashtra 410206",
     },
   ];
 
