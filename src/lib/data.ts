@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, MonitorSmartphone, ShoppingCart, PenTool, Search, Bot } from 'lucide-react';
+import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone } from 'lucide-react';
 
 export interface NavItem {
   title: string;
@@ -9,8 +9,8 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Contact", href: "/contact" },
+  { title: "Sectors", href: "/services" },
+  { title: "Contact Us", href: "/contact" },
 ];
 
 export interface Service {
@@ -24,51 +24,51 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "web-development",
-    title: "Web Development",
-    description: "Building responsive and scalable web applications to meet your business needs.",
-    longDescription: "Our web development team creates dynamic, high-performance websites and web applications. We specialize in both front-end and back-end development, ensuring a seamless user experience and robust functionality. From corporate websites to complex web portals, we deliver solutions that drive business growth.",
+    slug: "strategic-consulting",
+    title: "Strategic Consulting",
+    description: "Tailored strategies to drive growth, innovation, and market leadership.",
+    longDescription: "Our strategic consulting services are designed to help you navigate market complexities and achieve sustainable growth. We work with you to develop a clear vision and actionable roadmap, from market entry and product positioning to competitive analysis and long-term planning. Our data-driven insights empower you to make informed decisions that create lasting value.",
     Icon: Briefcase,
     image: "service-web-dev",
   },
   {
-    slug: "mobile-app-development",
-    title: "Mobile App Development",
-    description: "Creating intuitive and high-performance mobile apps for iOS and Android.",
-    longDescription: "We build native and cross-platform mobile applications that provide engaging user experiences. Our mobile app developers are experts in the latest technologies to bring your ideas to life, whether it's for a startup or a large enterprise.",
-    Icon: MonitorSmartphone,
+    slug: "financial-advisory",
+    title: "Financial Advisory",
+    description: "Expert guidance on mergers, acquisitions, and financial planning.",
+    longDescription: "We provide comprehensive financial advisory services to support your most critical business decisions. Whether you're considering a merger or acquisition, need help with capital raising, or require sophisticated financial modeling, our team offers the expertise to optimize your financial performance and mitigate risk.",
+    Icon: BarChart3,
     image: "service-mobile-dev",
   },
   {
-    slug: "ecommerce-development",
-    title: "E-commerce Development",
-    description: "Developing powerful e-commerce solutions to help you sell online.",
-    longDescription: "Our e-commerce solutions are designed to provide a secure and scalable platform for your online business. We offer custom features, payment gateway integration, and a user-friendly content management system to help you manage your products and sales effectively.",
-    Icon: ShoppingCart,
+    slug: "operations-improvement",
+    title: "Operations Improvement",
+    description: "Enhancing efficiency and performance across your organization.",
+    longDescription: "Our operations improvement services focus on boosting productivity and streamlining processes. We analyze your current operations to identify bottlenecks and implement solutions that enhance efficiency, reduce costs, and improve quality. From supply chain management to organizational design, we help you build a more agile and effective business.",
+    Icon: TrendingUp,
     image: "service-ecommerce",
   },
   {
-    slug: "ui-ux-design",
-    title: "UI/UX Design",
-    description: "Designing beautiful, user-friendly interfaces that your customers will love.",
-    longDescription: "Our UI/UX design services focus on creating intuitive and visually appealing digital products. We conduct user research, create wireframes and prototypes, and perform usability testing to ensure that your website or application is easy to use and provides a great user experience.",
-    Icon: PenTool,
+    slug: "technology-innovation",
+    title: "Technology & Innovation",
+    description: "Leveraging technology to create competitive advantages.",
+    longDescription: "In a digital-first world, leveraging the right technology is key to success. Our technology and innovation consultants help you harness the power of digital transformation, from developing a tech strategy to implementing cutting-edge solutions like AI and data analytics. We ensure your technology investments align with your business goals.",
+    Icon: Lightbulb,
     image: "service-ui-ux",
   },
   {
-    slug: "digital-marketing",
-    title: "Digital Marketing",
+    slug: "marketing-strategy",
+    title: "Marketing Strategy",
     description: "Comprehensive digital marketing strategies to grow your online presence.",
     longDescription: "We offer a full suite of digital marketing services, including social media marketing, content marketing, and pay-per-click advertising. Our team works with you to create a strategy that increases brand awareness, drives traffic, and generates leads.",
     Icon: Megaphone,
     image: "service-marketing",
   },
   {
-    slug: "seo",
-    title: "SEO",
-    description: "Improving your search engine rankings to attract more organic traffic.",
-    longDescription: "Our SEO experts use proven techniques to improve your website's visibility in search engine results. We focus on on-page SEO, off-page SEO, and technical SEO to drive long-term organic growth and help you reach your target audience.",
-    Icon: Search,
+    slug: "customer-experience",
+    title: "Customer Experience",
+    description: "Creating seamless and engaging customer journeys that build loyalty.",
+    longDescription: "Understanding and enhancing the customer experience is crucial for retention and growth. We help you map the customer journey, gather feedback, and implement strategies to create positive, memorable interactions at every touchpoint. By putting your customers first, you can build lasting loyalty and a strong brand reputation.",
+    Icon: HeartHandshake,
     image: "service-seo",
   },
 ];
@@ -83,7 +83,7 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Aamida Infotech transformed our approach to the market. Their insights were invaluable, and their team was a pleasure to work with. We've seen a 40% increase in revenue since our engagement.",
+    quote: "Aamida Consulting transformed our approach to the market. Their insights were invaluable, and their team was a pleasure to work with. We've seen a 40% increase in revenue since our engagement.",
     name: "John Doe",
     role: "CEO",
     company: "Innovate Inc.",
@@ -97,7 +97,7 @@ export const testimonials: Testimonial[] = [
     image: "testimonial-2",
   },
   {
-    quote: "Their expertise in operational efficiency is remarkable. We were able to streamline our supply chain and reduce costs by 25% in just six months. I highly recommend Aamida Infotech.",
+    quote: "Their expertise in operational efficiency is remarkable. We were able to streamline our supply chain and reduce costs by 25% in just six months. I highly recommend Aamida Consulting.",
     name: "Samuel Green",
     role: "VP of Operations",
     company: "Logistics Pro",

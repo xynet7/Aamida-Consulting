@@ -21,7 +21,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     };
   }
   return {
-    title: `${service.title} | Aamida Infotech`,
+    title: `${service.title} | Aamida Consulting`,
     description: service.description,
   };
 }

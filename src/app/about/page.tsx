@@ -5,8 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export const metadata = {
-  title: "About Us | Aamida Infotech",
-  description: "Learn about Aamida Infotech's mission, values, and the expert team dedicated to your success.",
+  title: "About Us | Aamida Consulting",
+  description: "Learn about Aamida Consulting's mission, values, and the expert team dedicated to your success.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            About Aamida Infotech
+            About Aamida Consulting
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             We are a team of passionate experts dedicated to helping businesses thrive through strategic insight and innovative solutions.

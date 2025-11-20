@@ -1,6 +1,6 @@
-# Aamida Infotech
+# Aamida Consulting
 
-This is a Next.js website for Aamida Infotech, a premier consulting firm.
+This is a Next.js website for Aamida Consulting, a premier consulting firm.
 
 This project is built with:
 

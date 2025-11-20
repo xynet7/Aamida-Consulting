@@ -30,7 +30,7 @@ export async function handleContactForm(
   // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 1000));
 
-  console.log("Received contact form submission to info@aamidainfotech.com:");
+  console.log("Received contact form submission to info@aamidaconsulting.com:");
   console.log(parsed.data);
 
   // You can add your email sending logic here, e.g., using Nodemailer or a service like Resend.
