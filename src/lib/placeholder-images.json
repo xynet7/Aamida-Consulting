@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "A modern office building with a cityscape background.",
-      "imageUrl": "https://images.unsplash.com/photo-1647404958478-04fcfb9ca071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5c2NhcGUlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYzNTc2NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cityscape architecture"
+      "description": "Beautiful Kyoto city temple at twilight in Japan.",
+      "imageUrl": "https://i.postimg.cc/FHn0ZnM1/beautiful-kyoto-city-temple-twilight-japan.jpg",
+      "imageHint": "Kyoto temple"
     },
     {
       "id": "service-strategy",
