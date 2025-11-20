@@ -29,7 +29,7 @@ export const services: Service[] = [
     description: "Tailored strategies to drive growth, innovation, and market leadership.",
     longDescription: "Our strategic consulting services are designed to help you navigate market complexities and achieve sustainable growth. We work with you to develop a clear vision and actionable roadmap, from market entry and product positioning to competitive analysis and long-term planning. Our data-driven insights empower you to make informed decisions that create lasting value.",
     Icon: Briefcase,
-    image: "service-web-dev",
+    image: "service-strategy",
   },
   {
     slug: "financial-advisory",
@@ -37,7 +37,7 @@ export const services: Service[] = [
     description: "Expert guidance on mergers, acquisitions, and financial planning.",
     longDescription: "We provide comprehensive financial advisory services to support your most critical business decisions. Whether you're considering a merger or acquisition, need help with capital raising, or require sophisticated financial modeling, our team offers the expertise to optimize your financial performance and mitigate risk.",
     Icon: BarChart3,
-    image: "service-mobile-dev",
+    image: "service-finance",
   },
   {
     slug: "operations-improvement",
@@ -45,7 +45,7 @@ export const services: Service[] = [
     description: "Enhancing efficiency and performance across your organization.",
     longDescription: "Our operations improvement services focus on boosting productivity and streamlining processes. We analyze your current operations to identify bottlenecks and implement solutions that enhance efficiency, reduce costs, and improve quality. From supply chain management to organizational design, we help you build a more agile and effective business.",
     Icon: TrendingUp,
-    image: "service-ecommerce",
+    image: "service-operations",
   },
   {
     slug: "technology-innovation",
@@ -53,7 +53,7 @@ export const services: Service[] = [
     description: "Leveraging technology to create competitive advantages.",
     longDescription: "In a digital-first world, leveraging the right technology is key to success. Our technology and innovation consultants help you harness the power of digital transformation, from developing a tech strategy to implementing cutting-edge solutions like AI and data analytics. We ensure your technology investments align with your business goals.",
     Icon: Lightbulb,
-    image: "service-ui-ux",
+    image: "service-technology",
   },
   {
     slug: "marketing-strategy",
@@ -69,7 +69,7 @@ export const services: Service[] = [
     description: "Creating seamless and engaging customer journeys that build loyalty.",
     longDescription: "Understanding and enhancing the customer experience is crucial for retention and growth. We help you map the customer journey, gather feedback, and implement strategies to create positive, memorable interactions at every touchpoint. By putting your customers first, you can build lasting loyalty and a strong brand reputation.",
     Icon: HeartHandshake,
-    image: "service-seo",
+    image: "service-customer-experience",
   },
 ];
 
