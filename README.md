@@ -1,5 +1,27 @@
-# Firebase Studio
+# Aamida Consulting
 
-This is a NextJS starter in Firebase Studio.
+This is a Next.js website for Aamida Consulting, a premier consulting firm.
 
-To get started, take a look at src/app/page.tsx.
+This project is built with:
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## Getting Started
+
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.

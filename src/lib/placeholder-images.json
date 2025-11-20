@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern office building with a cityscape background.",
+      "imageUrl": "https://images.unsplash.com/photo-1647404958478-04fcfb9ca071?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5c2NhcGUlMjBhcmNoaXRlY3R1cmV8ZW58MHx8fHwxNzYzNTc2NTQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cityscape architecture"
+    },
+    {
+      "id": "service-strategy",
+      "description": "People in a meeting discussing strategy around a table with notes.",
+      "imageUrl": "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYzNTczNjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business meeting"
+    },
+    {
+      "id": "service-finance",
+      "description": "A chart showing financial growth.",
+      "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2MzUyMzc2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data analytics"
+    },
+    {
+      "id": "service-tech",
+      "description": "Abstract visualization of data and technology.",
+      "imageUrl": "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYzNTcxNDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology abstract"
+    },
+    {
+      "id": "service-hr",
+      "description": "A diverse group of professionals smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1652420314885-3f543a5d8039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team portrait"
+    },
+    {
+      "id": "service-marketing",
+      "description": "A creative marketing campaign being brainstormed on a whiteboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1758876022473-d3d8513f15d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjcmVhdGl2ZSUyMGJyYWluc3Rvcm18ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creative brainstorm"
+    },
+    {
+      "id": "service-operations",
+      "description": "An organized warehouse or factory floor.",
+      "imageUrl": "https://images.unsplash.com/photo-1759390304892-dfb3cae59a1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwbG9naXN0aWNzfGVufDB8fHx8MTc2MzYyNjM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial logistics"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a smiling client.",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1MjcxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of another smiling client.",
+      "imageUrl": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1MjcxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a third satisfied client.",
+      "imageUrl": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjM1MjcxMTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional portrait"
+    },
+    {
+      "id": "about-us-main",
+      "description": "A collaborative team working in a modern office space.",
+      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NjM2MjYzNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "office teamwork"
+    },
+    {
+      "id": "team-member-1",
+      "description": "Headshot of the CEO.",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM1Nzg2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "team-member-2",
+      "description": "Headshot of the COO.",
+      "imageUrl": "https://images.unsplash.com/photo-1595211877493-41a4e5f236b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM1Nzg2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "team-member-3",
+      "description": "Headshot of the Lead Strategist.",
+      "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM1Nzg2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "team-member-4",
+      "description": "Headshot of the Financial Analyst.",
+      "imageUrl": "https://images.unsplash.com/photo-1652471943570-f3590a4e52ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NjM1Nzg2NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional headshot"
+    },
+    {
+      "id": "contact-hero",
+      "description": "Close up of a hand dialing a phone.",
+      "imageUrl": "https://images.unsplash.com/photo-1573164574230-db1d5e960238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMGNvbW11bmljYXRpb258ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business communication"
+    },
+    {
+      "id": "cta-background",
+      "description": "Abstract background with glowing lines.",
+      "imageUrl": "https://images.unsplash.com/photo-1621947081720-86970823b77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzYzNTg3ODY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract background"
+    }
+  ]
 }
