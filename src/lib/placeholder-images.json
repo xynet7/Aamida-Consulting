@@ -7,28 +7,28 @@
       "imageHint": "cityscape architecture"
     },
     {
-      "id": "service-strategy",
-      "description": "People in a meeting discussing strategy around a table with notes.",
-      "imageUrl": "https://images.unsplash.com/photo-1603202662747-00e33e7d1468?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxidXNpbmVzcyUyMG1lZXRpbmd8ZW58MHx8fHwxNzYzNTczNjM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
+      "id": "service-web-dev",
+      "description": "Developer working on a laptop with code on the screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NjM2MzEwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "web development"
     },
     {
-      "id": "service-finance",
-      "description": "A chart showing financial growth.",
-      "imageUrl": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc2MzUyMzc2MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data analytics"
+      "id": "service-mobile-dev",
+      "description": "A smartphone showcasing a mobile application.",
+      "imageUrl": "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXZlbG9wbWVudHxlbnwwfHx8fDE3NjM2MzEwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mobile app"
     },
     {
-      "id": "service-tech",
-      "description": "Abstract visualization of data and technology.",
-      "imageUrl": "https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx0ZWNobm9sb2d5JTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYzNTcxNDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "technology abstract"
+      "id": "service-ecommerce",
+      "description": "A person shopping online with a credit card.",
+      "imageUrl": "https://images.unsplash.com/photo-1561715276-a2d02e2496b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2V8ZW58MHx8fHwxNzYzNjMxMDE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ecommerce shopping"
     },
     {
-      "id": "service-hr",
-      "description": "A diverse group of professionals smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1652420314885-3f543a5d8039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWFtJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "team portrait"
+      "id": "service-ui-ux",
+      "description": "UI/UX designer wireframing an application on a whiteboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1aSUyMHV4JTIwZGVzaWdufGVufDB8fHx8MTc2MzYzMTAxNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "UI UX"
     },
     {
       "id": "service-marketing",
@@ -37,10 +37,10 @@
       "imageHint": "creative brainstorm"
     },
     {
-      "id": "service-operations",
-      "description": "An organized warehouse or factory floor.",
-      "imageUrl": "https://images.unsplash.com/photo-1759390304892-dfb3cae59a1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxpbmR1c3RyaWFsJTIwbG9naXN0aWNzfGVufDB8fHx8MTc2MzYyNjM1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "industrial logistics"
+      "id": "service-seo",
+      "description": "A magnifying glass over a computer screen showing search results.",
+      "imageUrl": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzZW98ZW58MHx8fHwxNzYzNjMxMDE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "SEO analytics"
     },
     {
       "id": "testimonial-1",

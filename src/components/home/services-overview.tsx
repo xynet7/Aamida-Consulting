@@ -12,7 +12,7 @@ export default function ServicesOverview() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            Our Consulting Services
+            Our Services
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
             We provide a comprehensive suite of services to address your most complex business challenges.

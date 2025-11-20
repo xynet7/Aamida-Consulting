@@ -6,8 +6,8 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Aamida Consulting | Expert Business Solutions",
-  description: "Aamida Consulting offers premier business consulting services to drive growth, strategy, and innovation for your company.",
+  title: "Aamida Infotech | Expert Business Solutions",
+  description: "Aamida Infotech offers premier business consulting services to drive growth, strategy, and innovation for your company.",
   keywords: "business consulting, strategy, management, growth, innovation, Aamida",
 };
 

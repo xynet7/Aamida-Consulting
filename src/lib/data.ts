@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone } from 'lucide-react';
+import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, MonitorSmartphone, ShoppingCart, PenTool, Search, Bot } from 'lucide-react';
 
 export interface NavItem {
   title: string;
@@ -8,8 +8,8 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
-  { title: "Services", href: "/services" },
   { title: "About Us", href: "/about" },
+  { title: "Services", href: "/services" },
   { title: "Contact", href: "/contact" },
 ];
 
@@ -24,52 +24,52 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "strategic-management",
-    title: "Strategic Management",
-    description: "Crafting future-proof strategies for sustainable growth and market leadership.",
-    longDescription: "Our Strategic Management services focus on helping you build a resilient and adaptive strategy that stands the test of time. We work with you to analyze market trends, identify opportunities, and create a roadmap for success. From market entry to long-term growth planning, we provide the insights you need to make informed decisions.",
+    slug: "web-development",
+    title: "Web Development",
+    description: "Building responsive and scalable web applications to meet your business needs.",
+    longDescription: "Our web development team creates dynamic, high-performance websites and web applications. We specialize in both front-end and back-end development, ensuring a seamless user experience and robust functionality. From corporate websites to complex web portals, we deliver solutions that drive business growth.",
     Icon: Briefcase,
-    image: "service-strategy",
+    image: "service-web-dev",
   },
   {
-    slug: "financial-advisory",
-    title: "Financial Advisory",
-    description: "Optimizing financial performance and ensuring long-term stability.",
-    longDescription: "With our Financial Advisory services, we help you navigate complex financial landscapes. Our experts provide support on everything from capital allocation and risk management to investment strategies and M&A activities. We aim to enhance your financial health and unlock value for your stakeholders.",
-    Icon: BarChart3,
-    image: "service-finance",
+    slug: "mobile-app-development",
+    title: "Mobile App Development",
+    description: "Creating intuitive and high-performance mobile apps for iOS and Android.",
+    longDescription: "We build native and cross-platform mobile applications that provide engaging user experiences. Our mobile app developers are experts in the latest technologies to bring your ideas to life, whether it's for a startup or a large enterprise.",
+    Icon: MonitorSmartphone,
+    image: "service-mobile-dev",
   },
   {
-    slug: "technology-innovation",
-    title: "Technology & Innovation",
-    description: "Leveraging technology to create cutting-edge solutions and competitive advantages.",
-    longDescription: "In a digital-first world, leveraging technology is key. Our Technology & Innovation consulting helps you harness the power of digital transformation. We advise on AI, data analytics, cloud strategy, and more, enabling you to innovate faster and operate more efficiently.",
-    Icon: Lightbulb,
-    image: "service-tech",
+    slug: "ecommerce-development",
+    title: "E-commerce Development",
+    description: "Developing powerful e-commerce solutions to help you sell online.",
+    longDescription: "Our e-commerce solutions are designed to provide a secure and scalable platform for your online business. We offer custom features, payment gateway integration, and a user-friendly content management system to help you manage your products and sales effectively.",
+    Icon: ShoppingCart,
+    image: "service-ecommerce",
   },
   {
-    slug: "operations-improvement",
-    title: "Operations Improvement",
-    description: "Streamlining processes to boost efficiency and reduce operational costs.",
-    longDescription: "Efficiency is at the core of profitability. Our Operations Improvement services are designed to streamline your processes, reduce waste, and increase productivity. We use lean methodologies and data analysis to identify bottlenecks and implement effective, sustainable improvements across your value chain.",
-    Icon: TrendingUp,
-    image: "service-operations",
+    slug: "ui-ux-design",
+    title: "UI/UX Design",
+    description: "Designing beautiful, user-friendly interfaces that your customers will love.",
+    longDescription: "Our UI/UX design services focus on creating intuitive and visually appealing digital products. We conduct user research, create wireframes and prototypes, and perform usability testing to ensure that your website or application is easy to use and provides a great user experience.",
+    Icon: PenTool,
+    image: "service-ui-ux",
   },
   {
-    slug: "human-resources",
-    title: "Human Resources",
-    description: "Building a strong culture and developing top-tier talent.",
-    longDescription: "Your people are your greatest asset. Our Human Resources consulting focuses on talent management, organizational design, and culture development. We help you create an environment where employees can thrive, driving engagement and performance.",
-    Icon: HeartHandshake,
-    image: "service-hr",
-  },
-  {
-    slug: "marketing-sales",
-    title: "Marketing & Sales",
-    description: "Driving revenue growth with effective marketing and sales strategies.",
-    longDescription: "Connect with your customers and drive growth. Our Marketing & Sales services help you develop a powerful go-to-market strategy. We cover everything from brand positioning and digital marketing to sales force effectiveness, ensuring your message resonates and your revenue grows.",
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    description: "Comprehensive digital marketing strategies to grow your online presence.",
+    longDescription: "We offer a full suite of digital marketing services, including social media marketing, content marketing, and pay-per-click advertising. Our team works with you to create a strategy that increases brand awareness, drives traffic, and generates leads.",
     Icon: Megaphone,
     image: "service-marketing",
+  },
+  {
+    slug: "seo",
+    title: "SEO",
+    description: "Improving your search engine rankings to attract more organic traffic.",
+    longDescription: "Our SEO experts use proven techniques to improve your website's visibility in search engine results. We focus on on-page SEO, off-page SEO, and technical SEO to drive long-term organic growth and help you reach your target audience.",
+    Icon: Search,
+    image: "service-seo",
   },
 ];
 
@@ -83,7 +83,7 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    quote: "Aamida Consulting transformed our approach to the market. Their insights were invaluable, and their team was a pleasure to work with. We've seen a 40% increase in revenue since our engagement.",
+    quote: "Aamida Infotech transformed our approach to the market. Their insights were invaluable, and their team was a pleasure to work with. We've seen a 40% increase in revenue since our engagement.",
     name: "John Doe",
     role: "CEO",
     company: "Innovate Inc.",
@@ -97,7 +97,7 @@ export const testimonials: Testimonial[] = [
     image: "testimonial-2",
   },
   {
-    quote: "Their expertise in operational efficiency is remarkable. We were able to streamline our supply chain and reduce costs by 25% in just six months. I highly recommend Aamida Consulting.",
+    quote: "Their expertise in operational efficiency is remarkable. We were able to streamline our supply chain and reduce costs by 25% in just six months. I highly recommend Aamida Infotech.",
     name: "Samuel Green",
     role: "VP of Operations",
     company: "Logistics Pro",

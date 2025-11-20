@@ -4,8 +4,8 @@ import { ContactForm } from "@/components/contact/contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const metadata = {
-  title: "Contact Us | Aamida Consulting",
-  description: "Get in touch with Aamida Consulting to discuss your business needs. We're here to help you succeed.",
+  title: "Contact Us | Aamida Infotech",
+  description: "Get in touch with Aamida Infotech to discuss your business needs. We're here to help you succeed.",
 };
 
 const contactDetails = [

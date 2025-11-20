@@ -7,8 +7,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 export const metadata = {
-  title: "Our Services | Aamida Consulting",
-  description: "Explore the comprehensive consulting services offered by Aamida Consulting, from strategy and finance to technology and operations.",
+  title: "Our Services | Aamida Infotech",
+  description: "Explore the comprehensive consulting services offered by Aamida Infotech, from strategy and finance to technology and operations.",
 };
 
 export default function ServicesPage() {
