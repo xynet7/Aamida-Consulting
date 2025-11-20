@@ -52,8 +52,8 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button asChild className="hidden md:flex" variant="outline">
-            <Link href="/contact">Get a Quote</Link>
+          <Button asChild variant="outline">
+            <Link href="/contact">Schedule a Consultation</Link>
           </Button>
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -93,7 +93,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto p-4">
                     <Button asChild className="w-full" onClick={closeMobileMenu}>
-                      <Link href="/contact">Get a Quote</Link>
+                      <Link href="/contact">Schedule a Consultation</Link>
                     </Button>
                   </div>
                 </div>
