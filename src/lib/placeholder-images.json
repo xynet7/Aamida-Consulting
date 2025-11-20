@@ -9,14 +9,14 @@
     {
       "id": "service-strategy",
       "description": "A group of professionals in a meeting, discussing strategy around a table with charts and documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business meeting"
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business strategy"
     },
     {
       "id": "service-finance",
       "description": "A desk with a laptop showing financial charts, a calculator, and documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1642427749670-f20e2e76f8c8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNpYWwlMjBhZHZpc29yeXxlbnwwfHx8fDE3NjU1NTc1OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial analytics"
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351759?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBhZHZpc29yeXxlbnwwfHx8fDE3NjU1NTc1OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "financial advisory"
     },
     {
       "id": "service-operations",
@@ -27,8 +27,8 @@
     {
       "id": "service-technology",
       "description": "An abstract image of a circuit board, representing technology and innovation.",
-      "imageUrl": "https://images.unsplash.com/photo-1526657782461-9fe13504a853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwdHJhbnNmb3JtYXRpb258ZW58MHx8fHwxNzY1NTU3NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "digital transformation"
+      "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbnxlbnwwfHx8fDE3NjYyODcwODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "technology innovation"
     },
     {
       "id": "service-marketing",
