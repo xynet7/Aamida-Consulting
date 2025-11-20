@@ -15,8 +15,8 @@
     {
       "id": "service-finance",
       "description": "A desk with a laptop showing financial charts, a calculator, and documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-169544351759?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaW5hbmNpYWwlMjBhZHZpc29yeXxlbnwwfHx8fDE3NjU1NTc1OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "financial advisory"
+      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwbWVldGluZ3xlbnwwfHx8fDE3Njc0MDUzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance meeting"
     },
     {
       "id": "service-operations",
