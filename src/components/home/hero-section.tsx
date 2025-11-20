@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex h-full items-center justify-center text-center text-primary-foreground">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-fade-in-down">
               Where Ideas Turn Into Reality
             </h1>
             <p className="mt-6 max-w-xl mx-auto text-lg text-primary-foreground/90 md:text-xl">
