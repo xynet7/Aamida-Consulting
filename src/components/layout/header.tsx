@@ -34,7 +34,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo className={cn(isScrolled ? "" : "invert brightness-0")} />
+        <Logo className={cn(isScrolled ? "text-foreground" : "text-primary-foreground")} />
 
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
