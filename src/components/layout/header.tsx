@@ -121,7 +121,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Button asChild>
-            <Link href="/contact">QUOTE</Link>
+            <Link href="/blog">BLOG</Link>
           </Button>
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -185,7 +185,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto border-t p-4">
                     <Button asChild className="w-full" onClick={closeMobileMenu}>
-                      <Link href="/contact">QUOTE</Link>
+                      <Link href="/blog">BLOG</Link>
                     </Button>
                   </div>
                 </div>

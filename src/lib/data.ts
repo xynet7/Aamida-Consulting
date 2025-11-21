@@ -22,6 +22,7 @@ export const navItems: NavItem[] = [
     ]
   },
   { title: "Key Sectors", href: "/sectors" },
+  { title: "Blog", href: "/blog" },
   { title: "Contact Us", href: "/contact" },
 ];
 
