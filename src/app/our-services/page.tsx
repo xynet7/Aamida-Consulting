@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Milestone, Eye, BarChart, Handshake, Building, Land, Search, FileCog, PlusCircle, Scaling } from "lucide-react";
+import { CheckCircle2, Milestone, Eye, BarChart, Handshake, Building, MapPin, Search, FileCog, PlusCircle, Scaling, Landmark } from "lucide-react";
 
 export const metadata = {
   title: "Our Services | Aamida Consulting",
@@ -26,7 +26,7 @@ const phases = [
       { 
         title: "Location Analysis", 
         description: "Comparative study of Indian states based on incentives, infrastructure, and labor availability.",
-        Icon: Land
+        Icon: MapPin
       },
     ],
   },
@@ -48,7 +48,7 @@ const phases = [
       { 
         title: "Land & Infrastructure", 
         description: "Assisting in the acquisition of industrial land in SEZs or industrial parks.",
-        Icon: Factory
+        Icon: Building
       },
        { 
         title: "Partner Identification", 
