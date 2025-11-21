@@ -14,7 +14,7 @@ export default function HeroSection() {
           src={heroImage.imageUrl}
           alt={heroImage.description}
           fill
-          className="object-cover"
+          className="object-cover animate-fade-in"
           priority
           data-ai-hint={heroImage.imageHint}
         />
