@@ -8,21 +8,21 @@ import { Briefcase, Search, Locate } from 'lucide-react';
 const serviceSnapshots = [
   {
     title: "Market Entry Strategy",
-    description: "Bespoke roadmap designed for your specific product and industry vertical.",
+    description: "Bespoke roadmaps designed for your specific product and industry vertical.",
     Icon: Briefcase,
-    href: "/services/strategic-consulting"
+    href: "/services/manufacturing-engineering"
   },
   {
     title: "Regulatory & Compliance",
-    description: "Navigating international and local approvals with precision and speed.",
+    description: "Navigating central and state-level approvals with precision and speed.",
     Icon: Search,
-    href: "/services/financial-advisory"
+    href: "/services/technology-saas"
   },
   {
-    title: "Partner & Supplier Search",
-    description: "Identifying the right geography and local partners for joint ventures.",
+    title: "Location & Partner Search",
+    description: "Identifying the right geography and the right local partners for Joint Ventures.",
     Icon: Locate,
-    href: "/services/operations-improvement"
+    href: "/services/healthcare-pharma"
   }
 ];
 

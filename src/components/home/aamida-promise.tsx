@@ -7,7 +7,7 @@ export function AamidaPromise() {
             Facilitating Investment. Ensuring Compliance. Accelerating Growth.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            The global economy offers unprecedented opportunities. But navigating its diverse landscape requires a partner who understands the terrain. Aamida provides end-to-end handholding for companies—from initial market feasibility studies to regulatory approvals and on-ground operational setup. We bridge the gap between global ambition and local execution.
+            India offers unprecedented opportunities, but the landscape is diverse and complex. You need a partner who understands the terrain. Acting as your national facilitator, Aamida provides end-to-end handholding for foreign companies—from initial feasibility to regulatory approvals and on-ground setup. We bridge the gap between global ambition and local execution.
           </p>
         </div>
       </div>
