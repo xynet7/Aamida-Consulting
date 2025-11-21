@@ -26,21 +26,20 @@ export default function HeroSection() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl animate-float">
-              Where Ideas Turn Into Reality
+              Your Strategic Gateway to the Indian Growth Story.
             </h1>
-            <p className="mt-6 max-w-xl mx-auto text-lg text-primary-foreground/90 md:text-xl">
-              We partner with ambitious leaders to solve their most critical challenges and capture their greatest opportunities.
+            <p className="mt-6 max-w-2xl mx-auto text-lg text-primary-foreground/90 md:text-xl">
+              Aamida Consulting Services navigates the complexities of the Indian market, turning regulatory challenges into competitive advantages for global investors.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/services">
-                  Explore Our Services
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Link href="/contact">
+                  Start Your India Journey
                 </Link>
               </Button>
               <Button asChild size="lg" variant="secondary">
-                <Link href="/contact">
-                  Schedule a Consultation
+                <Link href="/services">
+                  Explore Our Services
                 </Link>
               </Button>
             </div>

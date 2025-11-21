@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone } from 'lucide-react';
+import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, Search, Locate } from 'lucide-react';
 
 export interface NavItem {
   title: string;
@@ -25,26 +25,26 @@ export interface Service {
 export const services: Service[] = [
   {
     slug: "strategic-consulting",
-    title: "Strategic Consulting",
-    description: "Tailored strategies to drive growth, innovation, and market leadership.",
+    title: "Market Entry Strategy",
+    description: "Bespoke roadmap designed for your specific product and industry vertical.",
     longDescription: "Our strategic consulting services are designed to help you navigate market complexities and achieve sustainable growth. We work with you to develop a clear vision and actionable roadmap, from market entry and product positioning to competitive analysis and long-term planning. Our data-driven insights empower you to make informed decisions that create lasting value.",
     Icon: Briefcase,
     image: "service-strategy",
   },
   {
     slug: "financial-advisory",
-    title: "Financial Advisory",
-    description: "Expert guidance on mergers, acquisitions, and financial planning.",
+    title: "Regulatory & Compliance",
+    description: "Navigating central and state-level approvals with precision and speed.",
     longDescription: "We provide comprehensive financial advisory services to support your most critical business decisions. Whether you're considering a merger or acquisition, need help with capital raising, or require sophisticated financial modeling, our team offers the expertise to optimize your financial performance and mitigate risk.",
-    Icon: BarChart3,
+    Icon: Search,
     image: "service-finance",
   },
   {
     slug: "operations-improvement",
-    title: "Operations Improvement",
-    description: "Enhancing efficiency and performance across your organization.",
+    title: "Location & Partner Search",
+    description: "Identifying the right geography and the right local partners for joint ventures.",
     longDescription: "Our operations improvement services focus on boosting productivity and streamlining processes. We analyze your current operations to identify bottlenecks and implement solutions that enhance efficiency, reduce costs, and improve quality. From supply chain management to organizational design, we help you build a more agile and effective business.",
-    Icon: TrendingUp,
+    Icon: Locate,
     image: "service-operations",
   },
   {
