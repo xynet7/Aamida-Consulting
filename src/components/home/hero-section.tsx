@@ -19,8 +19,8 @@ export default function HeroSection() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/50 to-transparent" />
-      <div className="absolute inset-0 bg-primary/40" />
+      <div className="absolute inset-0 bg-gradient-to-t from-primary/50 via-primary/30 to-transparent" />
+      <div className="absolute inset-0 bg-primary/20" />
 
       <div className="relative z-10 flex h-full items-center justify-center text-center text-primary-foreground">
         <div className="container mx-auto px-4 md:px-6">
