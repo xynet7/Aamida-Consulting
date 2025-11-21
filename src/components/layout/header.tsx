@@ -34,7 +34,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo />
+        <Logo className={cn(isScrolled ? "" : "invert brightness-0")} />
 
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
@@ -43,7 +43,7 @@ export function Header() {
               href={item.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary" : "text-muted-foreground"
+                pathname === item.href ? "text-primary" : isScrolled ? "text-muted-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
               )}
             >
               {item.title}
@@ -58,14 +58,14 @@ export function Header() {
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className={cn(isScrolled ? "" : "text-primary-foreground hover:bg-white/10 hover:text-primary-foreground")}>
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-full max-w-xs bg-background">
+              <SheetContent side="right" className="w-full max-w-xs bg-background p-0">
                 <div className="flex h-full flex-col">
-                  <div className="flex items-center justify-between border-b p-4">
+                  <div className="flex h-20 items-center justify-between border-b px-4">
                     <Logo />
                     <SheetTrigger asChild>
                        <Button variant="ghost" size="icon">
@@ -91,7 +91,7 @@ export function Header() {
                       </Link>
                     ))}
                   </nav>
-                  <div className="mt-auto p-4">
+                  <div className="mt-auto border-t p-4">
                     <Button asChild className="w-full" onClick={closeMobileMenu}>
                       <Link href="/contact">QUOTE</Link>
                     </Button>

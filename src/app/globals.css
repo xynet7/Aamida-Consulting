@@ -62,4 +62,7 @@
   .text-balance {
     text-wrap: balance;
   }
+  .invert-on-transparent {
+    mix-blend-mode: difference;
+  }
 }
