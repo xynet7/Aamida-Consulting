@@ -38,7 +38,7 @@ export const services: Service[] = [
   {
     slug: "manufacturing-engineering",
     title: "Manufacturing & Engineering",
-    description: "India is poised to become the world's factory. We assist clients in navigating the 'Make in India' initiative, accessing PLI schemes, and setting up greenfield facilities.",
+    description: "India is poised to become the world's factory. We assist clients in navigating \"Make in India,\" accessing PLI schemes, and setting up greenfield facilities.",
     longDescription: "The world is a global factory. We assist clients in navigating manufacturing initiatives, accessing PLI schemes, and setting up greenfield facilities. Our expertise helps you capitalize on global manufacturing prowess.",
     Icon: Factory,
     image: "service-manufacturing",
@@ -46,7 +46,7 @@ export const services: Service[] = [
   {
     slug: "technology-saas",
     title: "Technology & SaaS",
-    description: "Leveraging India's massive digital infrastructure and talent pool. We help tech firms establish Global Capability Centers (GCCs) and navigate data privacy regulations.",
+    description: "Leveraging India's massive talent pool to establish Global Capability Centers (GCCs) while navigating complex data privacy regulations.",
     longDescription: "Leveraging massive digital infrastructure and talent pools. We help tech firms establish Global Capability Centers (GCCs) and navigate data privacy regulations, unlocking innovation and growth.",
     Icon: Cpu,
     image: "service-technology",
@@ -54,7 +54,7 @@ export const services: Service[] = [
   {
     slug: "healthcare-pharma",
     title: "Healthcare & Pharma",
-    description: "From medical devices to biotechnology, we guide companies through the complex regulatory framework of the CDSCO and state health departments.",
+    description: "Guiding companies through the regulatory framework of the CDSCO and state health departments, covering everything from medical devices to biotech.",
     longDescription: "From medical devices to biotechnology, we guide companies through complex regulatory frameworks. We ensure your entry into new healthcare markets is smooth and compliant.",
     Icon: Stethoscope,
     image: "service-healthcare",
@@ -62,7 +62,7 @@ export const services: Service[] = [
   {
     slug: "infrastructure-renewables",
     title: "Infrastructure & Renewables",
-    description: "Facilitating investments in India's massive push for roads, ports, and green energy transition, including solar and green hydrogen initiatives.",
+    description: "Facilitating investments in India's energy transition, including solar, wind, and the emerging Green Hydrogen landscape.",
     longDescription: "Facilitating investments in the massive global push for roads, ports, and green energy transition, including solar and green hydrogen initiatives. We help you be a part of a sustainable future.",
     Icon: Building,
     image: "service-infrastructure",
@@ -70,7 +70,7 @@ export const services: Service[] = [
   {
     slug: "retail-ecommerce",
     title: "Retail & E-commerce",
-    description: "Tapping into the world's largest consumer markets with tailored retail and e-commerce strategies.",
+    description: "Navigating FDI norms in multi-brand retail and assisting with supply chain integration for the Indian consumer market.",
     longDescription: "Tapping into one of the world's largest and fastest-growing consumer markets. We provide expert guidance on FDI regulations, supply chain setup, and digital strategies to succeed in Indian retail and e-commerce.",
     Icon: ShoppingCart,
     image: "service-retail",
