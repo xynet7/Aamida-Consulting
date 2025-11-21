@@ -42,7 +42,7 @@ export default function WhyIndiaPage() {
             src={heroImage.imageUrl}
             alt={heroImage.description}
             fill
-            className="object-cover"
+            className="object-cover animate-fade-in"
             data-ai-hint={heroImage.imageHint}
           />
         )}
