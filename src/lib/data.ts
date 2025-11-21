@@ -1,3 +1,4 @@
+
 import type { ComponentType } from "react";
 import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, Search, Locate, Factory, Cpu, Stethoscope, Building, ShoppingCart, Landmark, Wheat } from 'lucide-react';
 
@@ -10,7 +11,8 @@ export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Why India", href: "/why-india" },
-  { title: "Sectors", href: "/services" },
+  { title: "Our Services", href: "/our-services" },
+  { title: "Key Sectors", href: "/sectors" },
   { title: "Contact Us", href: "/contact" },
 ];
 
@@ -27,7 +29,7 @@ export const services: Service[] = [
   {
     slug: "manufacturing-engineering",
     title: "Manufacturing & Engineering",
-    description: "Assisting clients in navigating global manufacturing initiatives, accessing incentive schemes, and setting up greenfield facilities.",
+    description: "India is poised to become the world's factory. We assist clients in navigating the 'Make in India' initiative, accessing PLI schemes, and setting up greenfield facilities.",
     longDescription: "The world is a global factory. We assist clients in navigating manufacturing initiatives, accessing PLI schemes, and setting up greenfield facilities. Our expertise helps you capitalize on global manufacturing prowess.",
     Icon: Factory,
     image: "service-manufacturing",
@@ -35,7 +37,7 @@ export const services: Service[] = [
   {
     slug: "technology-saas",
     title: "Technology & SaaS",
-    description: "Leveraging global digital infrastructure and talent pools for tech firms and Global Capability Centers (GCCs).",
+    description: "Leveraging India's massive digital infrastructure and talent pool. We help tech firms establish Global Capability Centers (GCCs) and navigate data privacy regulations.",
     longDescription: "Leveraging massive digital infrastructure and talent pools. We help tech firms establish Global Capability Centers (GCCs) and navigate data privacy regulations, unlocking innovation and growth.",
     Icon: Cpu,
     image: "service-technology",
@@ -43,7 +45,7 @@ export const services: Service[] = [
   {
     slug: "healthcare-pharma",
     title: "Healthcare & Pharma",
-    description: "Guiding companies through the complex regulatory frameworks of international and state health departments.",
+    description: "From medical devices to biotechnology, we guide companies through the complex regulatory framework of the CDSCO and state health departments.",
     longDescription: "From medical devices to biotechnology, we guide companies through complex regulatory frameworks. We ensure your entry into new healthcare markets is smooth and compliant.",
     Icon: Stethoscope,
     image: "service-healthcare",
@@ -51,7 +53,7 @@ export const services: Service[] = [
   {
     slug: "infrastructure-renewables",
     title: "Infrastructure & Renewables",
-    description: "Facilitating investments in the massive push for roads, ports, and green energy transition.",
+    description: "Facilitating investments in India's massive push for roads, ports, and green energy transition, including solar and green hydrogen initiatives.",
     longDescription: "Facilitating investments in the massive global push for roads, ports, and green energy transition, including solar and green hydrogen initiatives. We help you be a part of a sustainable future.",
     Icon: Building,
     image: "service-infrastructure",
@@ -60,23 +62,23 @@ export const services: Service[] = [
     slug: "retail-ecommerce",
     title: "Retail & E-commerce",
     description: "Tapping into the world's largest consumer markets with tailored retail and e-commerce strategies.",
-    longDescription: "Tapping into the world's largest and fastest-growing consumer markets. We provide expert guidance on FDI regulations, supply chain setup, and digital strategies to succeed in global retail and e-commerce.",
+    longDescription: "Tapping into one of the world's largest and fastest-growing consumer markets. We provide expert guidance on FDI regulations, supply chain setup, and digital strategies to succeed in Indian retail and e-commerce.",
     Icon: ShoppingCart,
     image: "service-retail",
   },
   {
     slug: "fintech",
     title: "FinTech",
-    description: "Navigating the dynamic global FinTech landscape, from digital payments to regulatory compliance.",
-    longDescription: "The global FinTech ecosystem is a leader in innovation. We help you navigate the dynamic landscape, from understanding digital payment stacks to lending regulations, ensuring you can capitalize on the digital finance revolution.",
+    description: "Navigating the dynamic Indian FinTech landscape, from digital payments to regulatory compliance.",
+    longDescription: "The Indian FinTech ecosystem is a world leader in innovation. We help you navigate this dynamic landscape, from understanding the UPI stack to lending regulations, ensuring you can capitalize on the digital finance revolution.",
     Icon: Landmark,
     image: "service-fintech",
   },
   {
     slug: "agro-processing",
     title: "Agro-processing",
-    description: "Connecting global businesses to the world's agricultural heartlands and food processing opportunities.",
-    longDescription: "Connecting global businesses to vast agricultural heartlands. We assist with navigating food processing regulations, building supply chains, and leveraging government incentives to tap into this high-potential sector.",
+    description: "Connecting global businesses to India's agricultural heartlands and food processing opportunities.",
+    longDescription: "Connecting global businesses to India's vast agricultural heartlands. We assist with navigating food processing regulations, building supply chains, and leveraging government incentives to tap into this high-potential sector.",
     Icon: Wheat,
     image: "service-agro",
   },

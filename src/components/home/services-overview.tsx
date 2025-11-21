@@ -1,8 +1,7 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { services } from '@/lib/data';
-import { ArrowRight } from 'lucide-react';
 import { Briefcase, Search, Locate } from 'lucide-react';
 
 const serviceSnapshots = [
@@ -10,19 +9,19 @@ const serviceSnapshots = [
     title: "Market Entry Strategy",
     description: "Bespoke roadmaps designed for your specific product and industry vertical.",
     Icon: Briefcase,
-    href: "/services/manufacturing-engineering"
+    href: "/our-services"
   },
   {
     title: "Regulatory & Compliance",
     description: "Navigating central and state-level approvals with precision and speed.",
     Icon: Search,
-    href: "/services/technology-saas"
+    href: "/our-services"
   },
   {
     title: "Location & Partner Search",
     description: "Identifying the right geography and the right local partners for Joint Ventures.",
     Icon: Locate,
-    href: "/services/healthcare-pharma"
+    href: "/our-services"
   }
 ];
 
@@ -56,8 +55,8 @@ export default function ServicesOverview() {
 
         <div className="mt-12 text-center">
           <Button asChild size="lg">
-            <Link href="/services">
-              View All Services
+            <Link href="/our-services">
+              Explore Our Full Process
             </Link>
           </Button>
         </div>

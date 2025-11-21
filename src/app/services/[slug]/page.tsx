@@ -1,3 +1,4 @@
+
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,7 +18,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   const service = services.find((s) => s.slug === params.slug);
   if (!service) {
     return {
-      title: "Service Not Found",
+      title: "Sector Not Found",
     };
   }
   return {
@@ -46,7 +47,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
        <header className="bg-secondary py-12">
         <div className="container mx-auto px-4 md:px-6">
            <Button asChild variant="ghost" className="mb-4">
-             <Link href="/services"><ArrowLeft className="mr-2 h-4 w-4" /> Back to Services</Link>
+             <Link href="/sectors"><ArrowLeft className="mr-2 h-4 w-4" /> Back to Sectors</Link>
            </Button>
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
             {service.title}
@@ -88,13 +89,13 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
           <aside className="mt-12 lg:mt-0">
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline text-xl">Other Services</CardTitle>
+                <CardTitle className="font-headline text-xl">Other Sectors</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
                   {sideServices.map(sideService => (
                     <li key={sideService.slug}>
-                      <Link href={`/services/${sideService.slug}`} className="group">
+                      <Link href={`/sectors/${sideService.slug}`} className="group">
                         <p className="font-semibold group-hover:text-primary transition-colors">{sideService.title}</p>
                         <p className="text-sm text-muted-foreground">{sideService.description}</p>
                       </Link>
@@ -108,7 +109,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 <CardTitle className="font-headline text-xl">Ready to Start?</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-primary-foreground/80">Let's discuss how our {service.title} service can help your business.</p>
+                <p className="text-sm text-primary-foreground/80">Let's discuss how our {service.title} expertise can help your business.</p>
                 <Button asChild variant="secondary" className="mt-4 w-full bg-accent text-accent-foreground hover:bg-accent/90">
                   <Link href="/contact">Contact Us</Link>
                 </Button>
