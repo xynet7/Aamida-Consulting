@@ -37,7 +37,7 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Logo className={cn(isScrolled ? "text-foreground" : "text-primary-foreground")} />
+        <Logo />
 
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
@@ -46,9 +46,9 @@ export function Header() {
               href={item.href}
               className={cn(
                 "text-sm font-medium transition-colors",
-                pathname === item.href 
-                  ? (isScrolled ? "text-primary" : "text-white font-bold") 
-                  : (isScrolled ? "text-muted-foreground hover:text-primary" : "text-primary-foreground/80 hover:text-primary-foreground")
+                pathname === item.href
+                  ? "text-primary font-bold"
+                  : "text-muted-foreground hover:text-primary"
               )}
             >
               {item.title}
