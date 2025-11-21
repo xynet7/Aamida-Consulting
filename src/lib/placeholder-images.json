@@ -131,6 +131,12 @@
       "description": "A customer service representative helping a customer with a smile.",
       "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMGV4cGVyaWVuY2V8ZW58MHx8fHwxNzY1NTU3NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "customer experience"
+    },
+    {
+      "id": "why-india-hero",
+      "description": "The India Gate monument in New Delhi at sunset.",
+      "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "India Gate"
     }
   ]
 }

@@ -9,6 +9,7 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
+  { title: "Why India", href: "/why-india" },
   { title: "Sectors", href: "/services" },
   { title: "Contact Us", href: "/contact" },
 ];
