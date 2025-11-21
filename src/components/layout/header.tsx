@@ -18,11 +18,14 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const scrolled = window.scrollY > 10;
+      if (scrolled !== isScrolled) {
+        setIsScrolled(scrolled);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isScrolled]);
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
@@ -42,8 +45,10 @@ export function Header() {
               key={item.title}
               href={item.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
-                pathname === item.href ? "text-primary font-bold" : isScrolled ? "text-muted-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
+                "text-sm font-medium transition-colors",
+                pathname === item.href 
+                  ? (isScrolled ? "text-primary" : "text-white font-bold") 
+                  : (isScrolled ? "text-muted-foreground hover:text-primary" : "text-primary-foreground/80 hover:text-primary-foreground")
               )}
             >
               {item.title}
@@ -58,7 +63,7 @@ export function Header() {
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className={cn(isScrolled ? "" : "text-primary-foreground hover:bg-white/10 hover:text-primary-foreground")}>
+                <Button variant="ghost" size="icon" className={cn(isScrolled ? "text-foreground" : "text-primary-foreground hover:bg-white/10 hover:text-primary-foreground")}>
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
