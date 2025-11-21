@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Aamida Consulting | Expert Business Solutions",
   description: "Aamida Consulting offers premier business consulting services to drive growth, strategy, and innovation for your company.",
   keywords: "business consulting, strategy, management, growth, innovation, Aamida",
+  icons: {
+    icon: "https://i.postimg.cc/xCmrvGvG/PNG.png",
+  },
 };
 
 export default function RootLayout({
