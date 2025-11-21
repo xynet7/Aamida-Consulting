@@ -14,7 +14,7 @@ export function Logo({ className }: { className?: string }) {
           className="object-contain"
         />
       </div>
-      <span className="font-headline text-lg font-bold">
+      <span className="font-headline text-lg font-bold text-primary">
         Aamida Consulting
       </span>
     </Link>
