@@ -14,13 +14,13 @@ const serviceSnapshots = [
   },
   {
     title: "Regulatory & Compliance",
-    description: "Navigating central and state-level approvals with precision and speed.",
+    description: "Navigating international and local approvals with precision and speed.",
     Icon: Search,
     href: "/services/financial-advisory"
   },
   {
-    title: "Location & Partner Search",
-    description: "Identifying the right geography and the right local partners for joint ventures.",
+    title: "Partner & Supplier Search",
+    description: "Identifying the right geography and local partners for joint ventures.",
     Icon: Locate,
     href: "/services/operations-improvement"
   }
