@@ -22,6 +22,7 @@ import {
 import { Logo } from "@/components/logo";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,11 +63,9 @@ export function Header() {
                   setOpenDropdown(isOpen ? item.title : null)
                 }
               >
-                <DropdownMenuTrigger
-                  asChild
-                  onMouseEnter={() => setOpenDropdown(item.title)}
-                >
+                <DropdownMenuTrigger asChild>
                   <div
+                    onMouseEnter={() => setOpenDropdown(item.title)}
                     onMouseLeave={() => setOpenDropdown(null)}
                     className="relative"
                   >
@@ -74,7 +73,7 @@ export function Header() {
                       href={item.href}
                       className={cn(
                         "flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                        pathname === item.href
+                        pathname.startsWith(item.href)
                           ? "text-primary font-bold"
                           : "text-muted-foreground hover:text-primary",
                         openDropdown === item.title && "text-primary"
@@ -120,6 +119,7 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <ThemeToggle />
           <Button asChild>
             <Link href="/contact">QUOTE</Link>
           </Button>
