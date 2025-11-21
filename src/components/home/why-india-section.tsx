@@ -1,8 +1,8 @@
 const stats = [
-  { value: "#1", label: "Fastest Growing Major Economy" },
-  { value: "1.4B+", label: "Consumer Market Base" },
-  { value: "3rd", label: "Largest Startup Ecosystem Globally" },
-  { value: "$1.4T", label: "Infrastructure Pipeline" },
+  { value: "#1", label: "Fastest Growing Major Economies" },
+  { value: "3B+", label: "Consumer Market Base" },
+  { value: "Top", label: "Startup Ecosystems Globally" },
+  { value: "$5T+", label: "Infrastructure Pipeline" },
 ];
 
 export default function WhyIndiaSection() {
@@ -11,7 +11,7 @@ export default function WhyIndiaSection() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-                India at a Glance
+                The World at a Glance
             </h2>
         </div>
         <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">

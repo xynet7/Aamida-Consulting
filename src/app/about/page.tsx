@@ -17,7 +17,7 @@ export default function AboutPage() {
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            The Private Sector Catalyst for India's Economic Story.
+            The Private Sector Catalyst for Global Economic Growth.
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             We transform market potential into tangible success through actionable on-ground intelligence and deep regulatory liaison capabilities.
@@ -43,11 +43,11 @@ export default function AboutPage() {
                 At Aamida Consulting Services, we believe that the right guidance transforms market potential into tangible success. We were founded on the principle that foreign investment requires more than just data; it requires actionable on-ground intelligence and deep regulatory liaison capabilities.
             </p>
             <p className="mt-4 text-muted-foreground">
-                While government bodies promote the macro opportunity, Aamida is your dedicated private partner focused exclusively on your success. We act as an extension of your team in India, providing the crucial "ease of doing business" support needed to establish a foothold. Our team comprises policy experts, legal advisors, financial strategists, and industry veterans who understand the nuances of federal structures and state-level policies in India.
+                While government bodies promote macro opportunities, Aamida is your dedicated private partner focused exclusively on your success. We act as an extension of your team, providing the crucial "ease of doing business" support needed to establish a foothold in new markets. Our team comprises policy experts, legal advisors, financial strategists, and industry veterans who understand the nuances of international trade and local policies.
             </p>
             <h2 className="mt-8 font-headline text-3xl font-bold">Our Mission</h2>
              <p className="mt-4 text-muted-foreground">
-                To de-risk investment into India and accelerate the operational timelines for global companies.
+                To de-risk investment into new markets and accelerate the operational timelines for global companies.
             </p>
             <h2 className="mt-8 font-headline text-3xl font-bold">The Aamida Advantage</h2>
             <ul className="mt-4 space-y-2 text-muted-foreground">
