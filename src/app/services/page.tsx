@@ -17,7 +17,7 @@ export default function ServicesPage() {
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            Our Expertise
+            Deep Expertise in India's Growth Sectors
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             We offer a wide range of consulting services designed to help your business succeed.

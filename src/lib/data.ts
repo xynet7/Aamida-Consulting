@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, Search, Locate } from 'lucide-react';
+import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone, Search, Locate, Factory, Cpu, Stethoscope, Building, ShoppingCart, Landmark, Wheat } from 'lucide-react';
 
 export interface NavItem {
   title: string;
@@ -9,7 +9,7 @@ export interface NavItem {
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
-  { title: "Sectors", href: "/services" },
+  { title: "India Opportunity", href: "/services" },
   { title: "Contact Us", href: "/contact" },
 ];
 
@@ -24,54 +24,63 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "strategic-consulting",
-    title: "Market Entry Strategy",
-    description: "Bespoke roadmap designed for your specific product and industry vertical.",
-    longDescription: "Our strategic consulting services are designed to help you navigate market complexities and achieve sustainable growth. We work with you to develop a clear vision and actionable roadmap, from market entry and product positioning to competitive analysis and long-term planning. Our data-driven insights empower you to make informed decisions that create lasting value.",
-    Icon: Briefcase,
-    image: "service-strategy",
+    slug: "manufacturing-engineering",
+    title: "Manufacturing & Engineering",
+    description: "Assisting clients in navigating the 'Make in India' initiative, accessing PLI schemes, and setting up greenfield facilities.",
+    longDescription: "India is poised to become the world's factory. We assist clients in navigating the 'Make in India' initiative, accessing PLI schemes, and setting up greenfield facilities. Our expertise helps you capitalize on India's manufacturing prowess.",
+    Icon: Factory,
+    image: "service-manufacturing",
   },
   {
-    slug: "financial-advisory",
-    title: "Regulatory & Compliance",
-    description: "Navigating central and state-level approvals with precision and speed.",
-    longDescription: "We provide comprehensive financial advisory services to support your most critical business decisions. Whether you're considering a merger or acquisition, need help with capital raising, or require sophisticated financial modeling, our team offers the expertise to optimize your financial performance and mitigate risk.",
-    Icon: Search,
-    image: "service-finance",
-  },
-  {
-    slug: "operations-improvement",
-    title: "Location & Partner Search",
-    description: "Identifying the right geography and the right local partners for joint ventures.",
-    longDescription: "Our operations improvement services focus on boosting productivity and streamlining processes. We analyze your current operations to identify bottlenecks and implement solutions that enhance efficiency, reduce costs, and improve quality. From supply chain management to organizational design, we help you build a more agile and effective business.",
-    Icon: Locate,
-    image: "service-operations",
-  },
-  {
-    slug: "technology-innovation",
-    title: "Technology & Innovation",
-    description: "Leveraging technology to create competitive advantages.",
-    longDescription: "In a digital-first world, leveraging the right technology is key to success. Our technology and innovation consultants help you harness the power of digital transformation, from developing a tech strategy to implementing cutting-edge solutions like AI and data analytics. We ensure your technology investments align with your business goals.",
-    Icon: Lightbulb,
+    slug: "technology-saas",
+    title: "Technology & SaaS",
+    description: "Leveraging India's massive digital infrastructure and talent pool for tech firms and Global Capability Centers (GCCs).",
+    longDescription: "Leveraging India's massive digital infrastructure and talent pool. We help tech firms establish Global Capability Centers (GCCs) and navigate data privacy regulations, unlocking innovation and growth.",
+    Icon: Cpu,
     image: "service-technology",
   },
   {
-    slug: "marketing-strategy",
-    title: "Marketing Strategy",
-    description: "Comprehensive digital marketing strategies to grow your online presence.",
-    longDescription: "We offer a full suite of digital marketing services, including social media marketing, content marketing, and pay-per-click advertising. Our team works with you to create a strategy that increases brand awareness, drives traffic, and generates leads.",
-    Icon: Megaphone,
-    image: "service-marketing",
+    slug: "healthcare-pharma",
+    title: "Healthcare & Pharma",
+    description: "Guiding companies through the complex regulatory framework of the CDSCO and state health departments.",
+    longDescription: "From medical devices to biotechnology, we guide companies through the complex regulatory framework of the CDSCO and state health departments. We ensure your entry into India's healthcare market is smooth and compliant.",
+    Icon: Stethoscope,
+    image: "service-healthcare",
   },
   {
-    slug: "customer-experience",
-    title: "Customer Experience",
-    description: "Creating seamless and engaging customer journeys that build loyalty.",
-    longDescription: "Understanding and enhancing the customer experience is crucial for retention and growth. We help you map the customer journey, gather feedback, and implement strategies to create positive, memorable interactions at every touchpoint. By putting your customers first, you can build lasting loyalty and a strong brand reputation.",
-    Icon: HeartHandshake,
-    image: "service-customer-experience",
+    slug: "infrastructure-renewables",
+    title: "Infrastructure & Renewables",
+    description: "Facilitating investments in India's massive push for roads, ports, and green energy transition.",
+    longDescription: "Facilitating investments in India's massive push for roads, ports, and green energy transition, including solar and green hydrogen initiatives. We help you be a part of India's sustainable future.",
+    Icon: Building,
+    image: "service-infrastructure",
+  },
+  {
+    slug: "retail-ecommerce",
+    title: "Retail & E-commerce",
+    description: "Tapping into one of the world's largest consumer markets with tailored retail and e-commerce strategies.",
+    longDescription: "Tapping into one of the world's largest and fastest-growing consumer markets. We provide expert guidance on FDI regulations, supply chain setup, and digital strategies to succeed in Indian retail and e-commerce.",
+    Icon: ShoppingCart,
+    image: "service-retail",
+  },
+  {
+    slug: "fintech",
+    title: "FinTech",
+    description: "Navigating the dynamic Indian FinTech landscape, from UPI to digital lending and regulatory compliance.",
+    longDescription: "India's FinTech ecosystem is a global leader in innovation. We help you navigate the dynamic landscape, from understanding the UPI stack to digital lending regulations, ensuring you can capitalize on the digital payment revolution.",
+    Icon: Landmark,
+    image: "service-fintech",
+  },
+  {
+    slug: "agro-processing",
+    title: "Agro-processing",
+    description: "Connecting global businesses to India's agricultural heartland and food processing opportunities.",
+    longDescription: "Connecting global businesses to India's vast agricultural heartland. We assist with navigating food processing regulations, building supply chains, and leveraging government incentives to tap into this high-potential sector.",
+    Icon: Wheat,
+    image: "service-agro",
   },
 ];
+
 
 export interface Testimonial {
   quote: string;

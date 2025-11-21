@@ -7,40 +7,46 @@
       "imageHint": "Tokyo fuji"
     },
     {
-      "id": "service-strategy",
-      "description": "A group of professionals in a meeting, discussing strategy around a table with charts and documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "business strategy"
-    },
-    {
-      "id": "service-finance",
-      "description": "A desk with a laptop showing financial charts, a calculator, and documents.",
-      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwbWVldGluZ3xlbnwwfHx8fDE3Njc0MDUzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "finance meeting"
-    },
-    {
-      "id": "service-operations",
-      "description": "A factory floor with automated machinery, representing operational efficiency.",
-      "imageUrl": "https://images.unsplash.com/photo-1567789884554-0b844b597180?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmdfZGVzaWdufGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "organizational design"
+      "id": "service-manufacturing",
+      "description": "A modern factory with robotic arms working on an assembly line.",
+      "imageUrl": "https://images.unsplash.com/photo-1567789884554-0b844b597180?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW51ZmFjdHVyaW5nfGVufDB8fHx8MTc2NzQyMjU4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "manufacturing factory"
     },
     {
       "id": "service-technology",
-      "description": "An abstract image of a circuit board, representing technology and innovation.",
-      "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZWNobm9sb2d5JTIwaW5ub3ZhdGlvbnxlbnwwfHx8fDE3NjYyODcwODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "technology innovation"
+      "description": "A server room with racks of glowing servers.",
+      "imageUrl": "https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTYWFTfGVufDB8fHx8MTc2NzQyMjU4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "SaaS technology"
     },
     {
-      "id": "service-marketing",
-      "description": "A creative marketing campaign being brainstormed on a whiteboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1758876022473-d3d8513f15d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjcmVhdGl2ZSUyMGJyYWluc3Rvcm18ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "creative brainstorm"
+      "id": "service-healthcare",
+      "description": "A scientist looking at a test tube in a modern laboratory.",
+      "imageUrl": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoZWFsdGhjYXJlfGVufDB8fHx8MTc2NzQyMjU4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "healthcare science"
     },
     {
-      "id": "service-customer-experience",
-      "description": "A customer service representative helping a customer with a smile.",
-      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMGV4cGVyaWVuY2V8ZW58MHx8fHwxNzY1NTU3NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "customer experience"
+      "id": "service-infrastructure",
+      "description": "A large suspension bridge at sunset, representing infrastructure.",
+      "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmZyYXN0cnVjdHVyZXxlbnwwfHx8fDE3Njc0MjI1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "infrastructure bridge"
+    },
+    {
+      "id": "service-retail",
+      "description": "A bustling modern shopping mall with many people.",
+      "imageUrl": "https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXRhaWx8ZW58MHx8fHwxNzY3NDIyNTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retail shopping"
+    },
+    {
+      "id": "service-fintech",
+      "description": "A person using a smartphone to make a mobile payment.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740772-1a28a1a9f673?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmaW50ZWNoJTIwcGF5bWVudHxlbnwwfHx8fDE3Njc0MjI1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fintech payment"
+    },
+    {
+      "id": "service-agro",
+      "description": "A lush green field of wheat under a clear blue sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1505523363996-0e97686b360f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZ3JvJTIwZmllbGR8ZW58MHx8fHwxNzY3NDIyNTgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "agro field"
     },
     {
       "id": "testimonial-1",
@@ -101,6 +107,30 @@
       "description": "Abstract background with glowing lines.",
       "imageUrl": "https://images.unsplash.com/photo-1621947081720-86970823b77a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzYzNTg3ODY4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "abstract background"
+    },
+    {
+      "id": "service-strategy",
+      "description": "A group of professionals in a meeting, discussing strategy around a table with charts and documents.",
+      "imageUrl": "https://images.unsplash.com/photo-1542744095-291d1f67b221?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHN0cmF0ZWd5fGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "business strategy"
+    },
+    {
+      "id": "service-finance",
+      "description": "A desk with a laptop showing financial charts, a calculator, and documents.",
+      "imageUrl": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaW5hbmNlJTIwbWVldGluZ3xlbnwwfHx8fDE3Njc0MDUzNTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "finance meeting"
+    },
+    {
+      "id": "service-operations",
+      "description": "A factory floor with automated machinery, representing operational efficiency.",
+      "imageUrl": "https://images.unsplash.com/photo-1567789884554-0b844b597180?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcmdfZGVzaWdufGVufDB8fHx8MTc2NTU1NzU5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "organizational design"
+    },
+    {
+      "id": "service-customer-experience",
+      "description": "A customer service representative helping a customer with a smile.",
+      "imageUrl": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMGV4cGVyaWVuY2V8ZW58MHx8fHwxNzY1NTU3NTk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "customer experience"
     }
   ]
 }
