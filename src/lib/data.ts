@@ -5,13 +5,22 @@ import { Briefcase, BarChart3, Lightbulb, TrendingUp, HeartHandshake, Megaphone,
 export interface NavItem {
   title: string;
   href: string;
+  subItems?: NavItem[];
 }
 
 export const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Why India", href: "/why-india" },
-  { title: "Our Services", href: "/our-services" },
+  { 
+    title: "Our Services", 
+    href: "/our-services",
+    subItems: [
+      { title: "Pre-Entry Strategy", href: "/our-services#phase-1" },
+      { title: "Execution & Establishment", href: "/our-services#phase-2" },
+      { title: "Post-Entry & Expansion", href: "/our-services#phase-3" },
+    ]
+  },
   { title: "Key Sectors", href: "/sectors" },
   { title: "Contact Us", href: "/contact" },
 ];

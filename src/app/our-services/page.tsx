@@ -9,6 +9,7 @@ export const metadata = {
 
 const phases = [
   {
+    id: "phase-1",
     phase: "Phase 1",
     title: "Pre-Entry Strategy & Advisory",
     Icon: Eye,
@@ -31,6 +32,7 @@ const phases = [
     ],
   },
   {
+    id: "phase-2",
     phase: "Phase 2",
     title: "Execution & Establishment (The Handholding)",
     Icon: Handshake,
@@ -58,6 +60,7 @@ const phases = [
     ],
   },
   {
+    id: "phase-3",
     phase: "Phase 3",
     title: "Post-Entry & Expansion",
     Icon: Scaling,
@@ -99,7 +102,7 @@ export default function OurServicesPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="space-y-16">
             {phases.map((phase) => (
-              <section key={phase.phase}>
+              <section key={phase.phase} id={phase.id}>
                 <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 mb-8">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
                     <phase.Icon className="h-8 w-8 text-primary" />
