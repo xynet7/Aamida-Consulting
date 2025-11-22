@@ -137,6 +137,12 @@
       "description": "The India Gate monument in New Delhi at sunset.",
       "imageUrl": "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "India Gate"
+    },
+    {
+      "id": "blog-hero",
+      "description": "A person writing in a journal with a cup of coffee nearby.",
+      "imageUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwd3JpdGluZ3xlbnwwfHx8fDE2NzU4NjI4MDB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "blog writing"
     }
   ]
 }
