@@ -16,7 +16,6 @@ export const navItems: NavItem[] = [
     title: "Our Services", 
     href: "/our-services",
     subItems: [
-      { title: "About Us", href: "/our-services#about" },
       { title: "Services", href: "/our-services#services" },
       { title: "Events", href: "/our-services#events" },
       { title: "Support", href: "/our-services#support" },
