@@ -69,7 +69,7 @@
     {
       "id": "about-us-main",
       "description": "A collaborative team working in a modern office space.",
-      "imageUrl": "https://images.unsplash.com/photo-1637164153353-ef260e2e7e7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxvZmZpY2UlMjB0ZWFtd29ya3xlbnwwfHx8fDE3NjM2MjYzNTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1637164574230-db1d5e960238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMGNvbW11bmljYXRpb258ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "office teamwork"
     },
     {
@@ -143,6 +143,12 @@
       "description": "A person writing in a journal with a cup of coffee nearby.",
       "imageUrl": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibG9nJTIwd3JpdGluZ3xlbnwwfHx8fDE2NzU4NjI4MDB8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "blog writing"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "A bustling street scene in Mumbai, India, with taxis and crowds.",
+      "imageUrl": "https://images.unsplash.com/photo-1598327106232-0921899133a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzk2NTR8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYXJrZXR8ZW58MHx8fHwxNjYwNjQ1NTk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "Indian market"
     }
   ]
 }
