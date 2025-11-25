@@ -5,20 +5,13 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, User, Calendar } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { dummyPost } from "@/lib/blog-data";
 
 export const metadata = {
   title: "Blog | Aamida Consulting",
   description: "Read the latest insights and articles from Aamida Consulting.",
 };
 
-const dummyPost = {
-  slug: "navigating-the-indian-market-a-guide-for-investors",
-  title: "Navigating the Indian Market: A Guide for Foreign Investors",
-  author: "Dr. Alisha Khan",
-  date: "2024-07-29",
-  image: "blog-post-1",
-  excerpt: "India's rapidly growing economy presents a compelling opportunity for global investors. However, navigating its complex regulatory and cultural landscape can be challenging. This guide provides actionable insights for a successful market entry strategy.",
-};
 
 export default function BlogPage() {
   const blogImage = PlaceHolderImages.find(p => p.id === 'blog-hero');
