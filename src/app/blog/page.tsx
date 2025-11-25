@@ -5,17 +5,64 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, User, Calendar } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { dummyPost } from "@/lib/blog-data";
+import { blogPosts } from "@/lib/blog-data";
 
 export const metadata = {
   title: "Blog | Aamida Consulting",
   description: "Read the latest insights and articles from Aamida Consulting.",
 };
 
+const PostCard = ({ post }: { post: typeof blogPosts[0] }) => {
+    const postImage = PlaceHolderImages.find(p => p.id === post.image);
+    return (
+        <Card className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl">
+             <div className="grid md:grid-cols-2">
+                {postImage && (
+                    <div className="relative h-64 w-full md:h-full">
+                        <Image
+                        src={postImage.imageUrl}
+                        alt={post.title}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={postImage.imageHint}
+                        />
+                    </div>
+                )}
+                <div className="flex flex-col justify-center p-8">
+                     <CardHeader className="p-0">
+                         <h2 className="font-headline text-2xl font-bold tracking-tight text-primary sm:text-3xl">
+                            {post.title}
+                        </h2>
+                     </CardHeader>
+                     <CardContent className="p-0 mt-4">
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                            <div className="flex items-center gap-2">
+                                <User className="h-4 w-4" />
+                                <span>{post.author}</span>
+                            </div>
+                             <div className="flex items-center gap-2">
+                                <Calendar className="h-4 w-4" />
+                                <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                            </div>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed">
+                            {post.excerpt}
+                        </p>
+                        <Button asChild className="mt-6">
+                            <Link href={`/blog/${post.slug}`}>
+                                Read More <ArrowRight className="ml-2 h-4 w-4" />
+                            </Link>
+                        </Button>
+                     </CardContent>
+                </div>
+            </div>
+          </Card>
+    )
+}
+
 
 export default function BlogPage() {
   const blogImage = PlaceHolderImages.find(p => p.id === 'blog-hero');
-  const postImage = PlaceHolderImages.find(p => p.id === dummyPost.image);
 
   return (
     <div className="bg-background">
@@ -44,51 +91,10 @@ export default function BlogPage() {
       
       <main className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6">
-          <Card className="overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl">
-             <div className="grid md:grid-cols-2">
-                {postImage && (
-                    <div className="relative h-64 w-full md:h-full">
-                        <Image
-                        src={postImage.imageUrl}
-                        alt={dummyPost.title}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={postImage.imageHint}
-                        />
-                    </div>
-                )}
-                <div className="flex flex-col justify-center p-8">
-                     <CardHeader className="p-0">
-                         <h2 className="font-headline text-2xl font-bold tracking-tight text-primary sm:text-3xl">
-                            {dummyPost.title}
-                        </h2>
-                     </CardHeader>
-                     <CardContent className="p-0 mt-4">
-                        <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
-                            <div className="flex items-center gap-2">
-                                <User className="h-4 w-4" />
-                                <span>{dummyPost.author}</span>
-                            </div>
-                             <div className="flex items-center gap-2">
-                                <Calendar className="h-4 w-4" />
-                                <span>{new Date(dummyPost.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                            </div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed">
-                            {dummyPost.excerpt}
-                        </p>
-                        <Button asChild className="mt-6">
-                            <Link href={`/blog/${dummyPost.slug}`}>
-                                Read More <ArrowRight className="ml-2 h-4 w-4" />
-                            </Link>
-                        </Button>
-                     </CardContent>
-                </div>
-            </div>
-          </Card>
-
-          <div className="mt-16 flex h-64 items-center justify-center rounded-lg border-2 border-dashed bg-muted/50">
-            <p className="text-muted-foreground">More blog posts coming soon.</p>
+          <div className="space-y-12">
+            {blogPosts.map((post) => (
+                <PostCard key={post.slug} post={post} />
+            ))}
           </div>
 
         </div>
