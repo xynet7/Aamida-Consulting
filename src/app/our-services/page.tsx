@@ -1,5 +1,5 @@
 
-import { Handshake, Briefcase, Megaphone, Users, Rocket, Calendar, HelpingHand, Target, GraduationCap, Plane, Globe } from "lucide-react";
+import { Handshake, Briefcase, Megaphone, Users, Rocket, Calendar, Target, GraduationCap, Plane, Globe } from "lucide-react";
 
 export const metadata = {
   title: "Our Services | Aamida Consulting",
@@ -74,7 +74,7 @@ export default function OurServicesPage() {
             Our Services
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-            A dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions.
+            Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions. We specialize in connecting businesses with global opportunities, fostering growth through innovative consulting, investment facilitation, and expert guidance. Our mission is to enable seamless expansion and success in diverse markets by offering personalized, actionable insights and support.
           </p>
         </div>
       </header>
@@ -82,7 +82,7 @@ export default function OurServicesPage() {
       <main className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6 space-y-16">
           <section id="services">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Comprehensive Suite of Services</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Our Comprehensive Suite of Services</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service) => (
                  <div key={service.title} className="flex items-start gap-6">
@@ -113,7 +113,7 @@ export default function OurServicesPage() {
           </section>
 
           <section id="support">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Support for Your Expansion</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">Support for Your Expansion</h2>
              <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto mb-12">
                 Aamida Consulting Services supports your business expansion in India and abroad. We ensure a seamless approach to marketing and operations across borders, helping you achieve sustainable growth through:
             </p>
