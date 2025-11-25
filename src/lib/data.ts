@@ -16,9 +16,11 @@ export const navItems: NavItem[] = [
     title: "Our Services", 
     href: "/our-services",
     subItems: [
-      { title: "Pre-Entry Strategy", href: "/our-services#phase-1" },
-      { title: "Execution & Establishment", href: "/our-services#phase-2" },
-      { title: "Post-Entry & Expansion", href: "/our-services#phase-3" },
+      { title: "About Us", href: "/our-services#about" },
+      { title: "Services", href: "/our-services#services" },
+      { title: "Events", href: "/our-services#events" },
+      { title: "Support", href: "/our-services#support" },
+      { title: "Education", href: "/our-services#education" },
     ]
   },
   { title: "Key Sectors", href: "/sectors" },

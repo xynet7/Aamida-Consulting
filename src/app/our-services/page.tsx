@@ -1,88 +1,68 @@
-
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, Milestone, Eye, BarChart, Handshake, Building, MapPin, Search, FileCog, PlusCircle, Scaling, Landmark } from "lucide-react";
+import { Handshake, Briefcase, Megaphone, Users, Rocket, Calendar, HelpingHand, Target, GraduationCap, Plane, Globe } from "lucide-react";
 
 export const metadata = {
   title: "Our Services | Aamida Consulting",
-  description: "We support your business lifecycle: from the moment you consider India to the moment you expand your footprint.",
+  description: "Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions.",
 };
 
-const phases = [
-  {
-    id: "phase-1",
-    phase: "Phase 1",
-    title: "Pre-Entry Strategy & Advisory",
-    Icon: Eye,
-    services: [
-      { 
-        title: "Market Feasibility Studies", 
-        description: "Data-driven analysis of market size, competition, and consumer behavior.",
-        Icon: BarChart
-      },
-      { 
-        title: "Regulatory Landscape Assessment", 
-        description: "Mapping out necessary licenses, FDI policies, and sector-specific regulations.",
-        Icon: FileCog
-      },
-      { 
-        title: "Location Analysis", 
-        description: "Comparative study of Indian states based on incentives, infrastructure, and labor availability.",
-        Icon: MapPin
-      },
-    ],
-  },
-  {
-    id: "phase-2",
-    phase: "Phase 2",
-    title: "Execution & Establishment (The Handholding)",
-    Icon: Handshake,
-    services: [
-      { 
-        title: "Entity Formation", 
-        description: "Handling incorporation (WOS, JV, Branch Office) and tax registration (GST, PAN).",
-        Icon: Building
-      },
-      { 
-        title: "Government Liaising", 
-        description: "Expediting clearances from central ministries and state-level departments.",
-        Icon: Landmark
-      },
-      { 
-        title: "Land & Infrastructure", 
-        description: "Assisting in the acquisition of industrial land in SEZs or industrial parks.",
-        Icon: Building
-      },
-       { 
-        title: "Partner Identification", 
-        description: "Due diligence and matchmaking with credible local Indian partners.",
-        Icon: Search
-      },
-    ],
-  },
-  {
-    id: "phase-3",
-    phase: "Phase 3",
-    title: "Post-Entry & Expansion",
-    Icon: Scaling,
-    services: [
-      { 
-        title: "Compliance Management", 
-        description: "Ensuring ongoing adherence to company law, labor laws, and secretarial standards.",
-        Icon: CheckCircle2
-      },
-      { 
-        title: "Incentive Advisory", 
-        description: "Helping you unlock benefits under schemes like PLI (Production Linked Incentive).",
-        Icon: PlusCircle
-      },
-      { 
-        title: "Strategic Expansion", 
-        description: "Advising on M&A opportunities or diversification within the Indian market.",
-        Icon: Milestone
-      },
-    ],
-  },
+const services = [
+    {
+        Icon: Briefcase,
+        title: "Legal Consulting",
+        description: "Navigating complex legal landscapes to support your business’s compliance and regulatory needs.",
+    },
+    {
+        Icon: Plane,
+        title: "Business Trips",
+        description: "Organizing tailored business travel plans to facilitate international partnerships and networking opportunities.",
+    },
+    {
+        Icon: Megaphone,
+        title: "Advertising",
+        description: "Crafting strategic marketing campaigns to enhance your brand visibility and market reach.",
+    },
+    {
+        Icon: Users,
+        title: "B2B Consulting",
+        description: "Delivering expert advice and solutions to strengthen business-to-business relationships.",
+    },
+    {
+        Icon: Rocket,
+        title: "Angel Investment & Venture Capital",
+        description: "Connecting startups and growth-stage companies with potential investors to fuel innovation and development.",
+    },
 ];
+
+const supportItems = [
+    {
+        Icon: Handshake,
+        title: "Facilitating liaison and partnerships",
+    },
+    {
+        Icon: Briefcase,
+        title: "Product sourcing and trading",
+    },
+    {
+        Icon: Target,
+        title: "Market penetration strategies tailored for both Indian and international markets",
+    },
+];
+
+const educationItems = [
+    {
+        Icon: Plane,
+        title: "Organized educational trips abroad for schools and colleges.",
+    },
+    {
+        Icon: GraduationCap,
+        title: "Specialized principal trips.",
+    },
+    {
+        Icon: Globe,
+        title: "Exchange programs fostering cultural and academic collaboration.",
+    },
+];
+
 
 export default function OurServicesPage() {
   return (
@@ -90,45 +70,93 @@ export default function OurServicesPage() {
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            End-to-End Investment Facilitation
+            Our Services
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-            We support your business lifecycle: from the moment you consider India to the moment you expand your footprint.
+            A dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions.
           </p>
         </div>
       </header>
 
       <main className="py-16 sm:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="space-y-16">
-            {phases.map((phase) => (
-              <section key={phase.phase} id={phase.id}>
-                <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 mb-8">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
-                    <phase.Icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">{phase.phase}</h3>
-                    <h2 className="font-headline text-3xl font-bold tracking-tight">{phase.title}</h2>
-                  </div>
-                </div>
+        <div className="container mx-auto px-4 md:px-6 space-y-16">
 
-                <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                  {phase.services.map((service) => (
-                    <Card key={service.title} className="flex items-start p-6 gap-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
-                         <service.Icon className="h-6 w-6 text-primary" />
-                       </div>
-                       <div>
-                         <h4 className="font-headline text-xl font-bold">{service.title}</h4>
-                         <p className="mt-2 text-muted-foreground">{service.description}</p>
-                       </div>
-                     </Card>
-                  ))}
+          <section id="about">
+             <div className="max-w-4xl mx-auto">
+                 <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">About Us</h2>
+                 <p className="text-lg text-muted-foreground text-center">
+                    Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions. We specialize in connecting businesses with global opportunities, fostering growth through innovative consulting, investment facilitation, and expert guidance. Our mission is to enable seamless expansion and success in diverse markets by offering personalized, actionable insights and support.
+                 </p>
+             </div>
+          </section>
+
+          <section id="services">
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Comprehensive Suite of Services</h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {services.map((service) => (
+                 <div key={service.title} className="flex items-start gap-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 flex-shrink-0">
+                      <service.Icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-headline text-xl font-bold">{service.title}</h3>
+                      <p className="mt-1 text-muted-foreground">{service.description}</p>
+                    </div>
+                  </div>
+              ))}
+            </div>
+          </section>
+
+          <section id="events" className="bg-secondary rounded-lg p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+                 <div>
+                    <h2 className="font-headline text-3xl font-bold tracking-tight">Events</h2>
+                     <p className="mt-4 text-lg text-muted-foreground">
+                        Stay informed with our sector-specific upcoming events, including business trips and networking opportunities across multiple countries. Our carefully curated calendar offers monthly options tailored to various industries, bringing you the best global exposure and collaboration prospects.
+                     </p>
+                 </div>
+                 <div className="flex items-center justify-center">
+                    <Calendar className="h-24 w-24 text-primary" />
+                 </div>
+            </div>
+          </section>
+
+          <section id="support">
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Support for Your Expansion</h2>
+             <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto mb-12">
+                Aamida Consulting Services supports your business expansion in India and abroad. We ensure a seamless approach to marketing and operations across borders, helping you achieve sustainable growth through:
+            </p>
+            <div className="grid gap-8 md:grid-cols-3">
+              {supportItems.map((item) => (
+                <div key={item.title} className="text-center">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mx-auto mb-4">
+                        <item.Icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <p className="text-lg text-muted-foreground">{item.title}</p>
                 </div>
-              </section>
-            ))}
-          </div>
+              ))}
+            </div>
+          </section>
+          
+          <section id="education" className="bg-secondary rounded-lg p-8 md:p-12">
+            <div className="max-w-4xl mx-auto">
+                <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">Education</h2>
+                <p className="text-lg text-muted-foreground text-center mb-10">
+                    Our educational programs open doors to global learning experiences. These programs are designed to enrich knowledge, broaden worldviews, and create valuable international connections for students and institutions.
+                </p>
+                <div className="grid gap-8 md:grid-cols-3">
+                    {educationItems.map((item) => (
+                        <div key={item.title} className="text-center">
+                             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 mx-auto mb-4">
+                                <item.Icon className="h-6 w-6 text-primary" />
+                            </div>
+                            <p className="text-muted-foreground">{item.title}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+          </section>
+
         </div>
       </main>
     </div>
