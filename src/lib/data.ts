@@ -142,28 +142,5 @@ export const teamMembers: TeamMember[] = [
     bio: "An esteemed advisor providing strategic guidance based on years of industry experience.",
     image: "team-member-5",
   },
-  {
-    name: "Dr. Alisha Khan",
-    role: "Founder & CEO",
-    bio: "With over 20 years of experience in global business strategy, Dr. Khan leads Aamida with a passion for innovation and client success. Her vision is to empower businesses to achieve their full potential.",
-    image: "team-member-1",
-  },
-  {
-    name: "Michael Chen",
-    role: "Chief Operating Officer",
-    bio: "Michael is an expert in operational excellence and organizational transformation. He ensures that Aamida's clients receive seamless, efficient, and impactful consulting services.",
-    image: "team-member-2",
-  },
-  {
-    name: "Priya Sharma",
-    role: "Lead Strategist",
-    bio: "Priya specializes in market entry and growth strategies. Her analytical prowess and creative thinking help clients uncover new opportunities and navigate competitive landscapes.",
-    image: "team-member-3",
-  },
-  {
-    name: "David Lee",
-    role: "Head of Financial Advisory",
-    bio: "A seasoned financial expert, David provides guidance on complex financial matters, from M&A to risk management. He is dedicated to ensuring the financial health of our clients.",
-    image: "team-member-4",
-  },
 ];
+

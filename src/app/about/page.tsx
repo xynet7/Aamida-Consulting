@@ -70,11 +70,11 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 flex justify-center">
             {teamMembers.map((member) => {
               const memberImage = PlaceHolderImages.find(p => p.id === member.image);
               return (
-                <Card key={member.name} className="text-center">
+                <Card key={member.name} className="text-center max-w-sm">
                   <CardContent className="p-6">
                     <Avatar className="mx-auto h-32 w-32">
                       {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
