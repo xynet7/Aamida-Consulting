@@ -1,16 +1,27 @@
-import Image from "next/image";
-import { teamMembers } from "@/lib/data";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export const metadata = {
-  title: "About Us | Aamida Consulting",
-  description: "Learn about Aamida Consulting's mission, values, and the expert team dedicated to your success.",
-};
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import { teamMembers, type TeamMember } from "@/lib/data";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import { X } from "lucide-react";
 
 export default function AboutPage() {
   const aboutImage = PlaceHolderImages.find(p => p.id === 'about-us-main');
+  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
     <div className="bg-background">
@@ -70,24 +81,56 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="mt-12 flex justify-center">
-            {teamMembers.map((member) => {
-              const memberImage = PlaceHolderImages.find(p => p.id === member.image);
-              return (
-                <Card key={member.name} className="text-center max-w-sm">
-                  <CardContent className="p-6">
-                    <Avatar className="mx-auto h-32 w-32">
-                      {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
-                      <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+          <Dialog>
+            <div className="mt-12 flex justify-center flex-wrap gap-8">
+              {teamMembers.map((member) => {
+                const memberImage = PlaceHolderImages.find(p => p.id === member.image);
+                return (
+                  <DialogTrigger key={member.name} asChild>
+                    <Card
+                      className="text-center max-w-sm cursor-pointer transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+                      onClick={() => setSelectedMember(member)}
+                    >
+                      <CardContent className="p-6">
+                        <Avatar className="mx-auto h-32 w-32">
+                          {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
+                          <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <h3 className="mt-4 font-headline text-xl font-semibold">{member.name}</h3>
+                        <p className="text-sm font-medium text-primary">{member.role}</p>
+                         <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{member.bio}</p>
+                      </CardContent>
+                    </Card>
+                  </DialogTrigger>
+                );
+              })}
+            </div>
+
+            {selectedMember && (
+              <DialogContent className="sm:max-w-[600px]">
+                <DialogHeader>
+                  <DialogTitle className="flex items-center gap-4">
+                    <Avatar className="h-16 w-16">
+                      <AvatarImage src={PlaceHolderImages.find(p => p.id === selectedMember.image)?.imageUrl} alt={selectedMember.name} />
+                      <AvatarFallback>{selectedMember.name.charAt(0)}</AvatarFallback>
                     </Avatar>
-                    <h3 className="mt-4 font-headline text-xl font-semibold">{member.name}</h3>
-                    <p className="text-sm font-medium text-primary">{member.role}</p>
-                    <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+                    <div>
+                      <div className="font-headline text-2xl">{selectedMember.name}</div>
+                      <p className="text-base font-medium text-primary">{selectedMember.role}</p>
+                    </div>
+                  </DialogTitle>
+                </DialogHeader>
+                <div className="prose prose-sm max-w-none max-h-[60vh] overflow-y-auto text-muted-foreground pr-4">
+                   <p>{selectedMember.bio}</p>
+                </div>
+                <DialogClose asChild>
+                  <Button type="button" variant="secondary" className="mt-4">
+                    Close
+                  </Button>
+                </DialogClose>
+              </DialogContent>
+            )}
+          </Dialog>
         </div>
       </section>
     </div>
