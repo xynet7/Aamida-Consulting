@@ -160,4 +160,10 @@ export const teamMembers: TeamMember[] = [
     bio: "A seasoned financial expert, David provides guidance on complex financial matters, from M&A to risk management. He is dedicated to ensuring the financial health of our clients.",
     image: "team-member-4",
   },
+  {
+    name: "Shri Rahul Mishra",
+    role: "Advisor",
+    bio: "An esteemed advisor providing strategic guidance based on years of industry experience.",
+    image: "team-member-5",
+  }
 ];
