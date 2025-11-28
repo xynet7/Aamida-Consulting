@@ -139,8 +139,10 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Shri Rahul Mishra",
     role: "Advisor",
-    bio: "An esteemed advisor providing strategic guidance based on years of industry experience.",
+    bio: "Shri Rahul Mishra is working as Vice President of SEWA Foundation and Managing Director of Aamida Infotech. Mr. Rahul has overall strategic and operational responsibility, including setting the vision, creating and implementing strategy, and driving growth. He has over 18 years of experience in international business development, operations, and consulting. He has started Aamida Consulting Services in 2011, and has been instrumental in growing ACS in PAN India since then. Mr.Rahul is passionate about Education and Manufacturing Industry and Information Technologies. He strongly believes in creating authentic and mutually significant long term relationships with customers. Prior to start ACS, Mr.Rahul spent 12 years with several IT industries such as Oracle, MothersonSumi Infotech, Four soft, IBM, Macfee, Nucleus Software, SAP Labs. Rahul holds an MBA in International Marketing from ICFAI, Hyderabad, India. Currently he is associated with Japan Foundation as well.",
     image: "team-member-5",
   },
 ];
+
+
 
