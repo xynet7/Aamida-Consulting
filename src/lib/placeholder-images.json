@@ -115,6 +115,12 @@
       "imageHint": "professional headshot"
     },
     {
+      "id": "team-member-8",
+      "description": "Headshot of Shri Manisha Mondal Tripathi",
+      "imageUrl": "https://aamidainfotech.com/wp-content/uploads/2021/01/Manisha.jpg",
+      "imageHint": "professional headshot"
+    },
+    {
       "id": "contact-hero",
       "description": "Close up of a hand dialing a phone.",
       "imageUrl": "https://images.unsplash.com/photo-1573164574230-db1d5e960238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMGNvbW11bmljYXRpb258ZW58MHx8fHwxNzYzNjI2MzUyfDA&ixlib=rb-4.1.0&q=80&w=1080",

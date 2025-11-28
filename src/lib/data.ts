@@ -154,4 +154,10 @@ export const teamMembers: TeamMember[] = [
     bio: "Shri Surajit Kalita is working for Aamida Consulting Services (North East Region) as (International Trade & Business Consultant). With 13+ years of experience in consulting, Mr Surajit Kalita has also vast experience in concept management, strategic management and planning. He have served as an advisor, coordinator and negotiator with several organisation. Surajit has started his career as a consultant and contributed in various sectors like education, sports, corporate service industry in Bangalore, Kolkata and Delhi. He has also worked with the International MBNA Bank located in Canada which has merged with Bank of America in B to B process from IT City Bangalore India. Later on he gained the experiences by working with an International Company called RE/MAX located in USA & Canada as a Franchise sales Consultant .",
     image: "team-member-7",
   },
+  {
+    name: "Shri Manisha Mondal Tripathi",
+    role: "JAPAN TRADE & BUSINESS CONSULTANT",
+    bio: "Shri Manisha is working with Aamida Consulting Services as Japan Business Coordinator and hold BA(Hons)graduate in Japanese language, junior mombushou participated in Japan Foundation, Japan. 13 yes work experience with topmost Jap multinational companies. She worked as a country host cum coordinator with commerce ministry group ITPO 2005Aichi expo, Nagoya.From 2006 to 2008 worked Suzuki head office Hamamatsu as a translator and group leader. She worked in Hero moto corp as a deputy manager, cum interpreter in the RND division from 2008 to 2014. As a social service guiding to Japanese classes in DPS Gurgaon",
+    image: "team-member-8",
+  },
 ];
