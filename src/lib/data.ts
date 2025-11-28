@@ -142,8 +142,10 @@ export const teamMembers: TeamMember[] = [
     bio: "Shri Rahul Mishra is working as Vice President of SEWA Foundation and Managing Director of Aamida Infotech. Mr. Rahul has overall strategic and operational responsibility, including setting the vision, creating and implementing strategy, and driving growth. He has over 18 years of experience in international business development, operations, and consulting. He has started Aamida Consulting Services in 2011, and has been instrumental in growing ACS in PAN India since then. Mr.Rahul is passionate about Education and Manufacturing Industry and Information Technologies. He strongly believes in creating authentic and mutually significant long term relationships with customers. Prior to start ACS, Mr.Rahul spent 12 years with several IT industries such as Oracle, MothersonSumi Infotech, Four soft, IBM, Macfee, Nucleus Software, SAP Labs. Rahul holds an MBA in International Marketing from ICFAI, Hyderabad, India. Currently he is associated with Japan Foundation as well.",
     image: "team-member-5",
   },
+  {
+    name: "Shri Lokendra Rana",
+    role: "Executive Director",
+    bio: "Shri Lokendra Rana the Executive Director (International Sales and Marketing) of the company, graduated and post-graduated, Bachelor of Arts in English, Economics, and Sociology and completed his masters in English Literature. Additional to the academic degrees, he has done Japanese Language and obtained the JLPT certification Level-3 in the year 2005 from the Japan Foundation and Japan Educational Exchanges and Services. He did his Post Graduate Diploma in International Business and did his MBA in Marketing, He also did a certificate course in C, C++, Linux, Unix, and also a part of the core team to get implement SAP S4/HANA implementation in his company at Ethiopia Plant. He also served in Bangladesh as Head Operations (CEO) and the last assignment was in Ethiopia, Africa in the capacity of General Manager. He has won the Best Team Performance award from Raymond’s in 2013 and has vast work experience Internationally & Nationally in various companies. He also specialized skill of traditional North Indian farming and has over two decades of experience. He has a good knowledge of the Indian share market and cryptocurrency trade. He did inceptions of two plants in his career from the Greenfield project to commissioning. Mr. Rana has joined ACS as Executive Director of Aamida Infotech.",
+    image: "team-member-6",
+  },
 ];
-
-
-
-
