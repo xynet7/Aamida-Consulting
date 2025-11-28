@@ -137,6 +137,12 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
+    name: "Shri Rahul Mishra",
+    role: "Advisor",
+    bio: "An esteemed advisor providing strategic guidance based on years of industry experience.",
+    image: "team-member-5",
+  },
+  {
     name: "Dr. Alisha Khan",
     role: "Founder & CEO",
     bio: "With over 20 years of experience in global business strategy, Dr. Khan leads Aamida with a passion for innovation and client success. Her vision is to empower businesses to achieve their full potential.",
@@ -160,10 +166,4 @@ export const teamMembers: TeamMember[] = [
     bio: "A seasoned financial expert, David provides guidance on complex financial matters, from M&A to risk management. He is dedicated to ensuring the financial health of our clients.",
     image: "team-member-4",
   },
-  {
-    name: "Shri Rahul Mishra",
-    role: "Advisor",
-    bio: "An esteemed advisor providing strategic guidance based on years of industry experience.",
-    image: "team-member-5",
-  }
 ];
