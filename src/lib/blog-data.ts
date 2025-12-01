@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "beyond-china-plus-one-why-india-is-the-new-foreign-investment-hotspot",
     title: "Beyond 'China Plus One': Why India is the New Foreign Investment Hotspot",
-    author: "Michael Chen",
+    author: "Shri Rahul Mishra",
     date: "2025-11-25T00:00:00.000Z",
     image: "blog-post-2",
     excerpt: "Global supply chains are undergoing a seismic shift. For decades, China has been the undisputed world's factory, but rising costs, geopolitical tensions, and a desire for diversification are driving companies to seek alternatives. This is where India steps in, not just as an alternative, but as a primary destination for foreign direct investment (FDI).",
@@ -58,7 +58,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "navigating-the-indian-market-a-guide-for-investors",
     title: "Navigating the Indian Market: A Guide for Foreign Investors",
-    author: "Dr. Alisha Khan",
+    author: "Shri Rahul Mishra",
     date: "2025-11-25T00:00:00.000Z",
     image: "blog-post-1",
     excerpt: "India's rapidly growing economy presents a compelling opportunity for global investors. However, navigating its complex regulatory and cultural landscape can be challenging. This guide provides actionable insights for a successful market entry strategy.",

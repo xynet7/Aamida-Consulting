@@ -171,13 +171,13 @@
     {
       "id": "blog-post-1",
       "description": "A bustling street scene in Mumbai, India, with taxis and crowds.",
-      "imageUrl": "https://images.unsplash.com/photo-1598327106232-0921899133a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNzk2NTR8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBtYXJrZXR8ZW58MHx8fHwxNjYwNjQ1NTk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1728325444513-f6f7bdd0950a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjBtYXJrZXR8ZW58MHx8fHwxNzY0NTMxOTM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Indian market"
     },
     {
       "id": "blog-post-2",
       "description": "Global supply chain and logistics concept with container ships and airplanes.",
-      "imageUrl": "https://images.unsplash.com/photo-1613621412255-6b586b515546?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnbG9iYWwlMjBzdXBwbHklMjBjaGFpbnxlbnwwfHx8fDE3Njc0MjI1ODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1738737271801-d404a575d870?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnbG9iYWwlMjBzdXBwbHl8ZW58MHx8fHwxNzY0NTY4NDk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "global supply"
     }
   ]
