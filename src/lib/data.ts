@@ -139,25 +139,25 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Shri Rahul Mishra",
     role: "Founding and Manager Director",
-    bio: "Shri Rahul Mishra is working as Vice President of SEWA Foundation and Managing Director of Aamida Infotech. Mr. Rahul has overall strategic and operational responsibility, including setting the vision, creating and implementing strategy, and driving growth. He has over 18 years of experience in international business development, operations, and consulting. He has started Aamida Consulting Services in 2011, and has been instrumental in growing ACS in PAN India since then. Mr.Rahul is passionate about Education and Manufacturing Industry and Information Technologies. He strongly believes in creating authentic and mutually significant long term relationships with customers. Prior to start ACS, Mr.Rahul spent 12 years with several IT industries such as Oracle, MothersonSumi Infotech, Four soft, IBM, Macfee, Nucleus Software, SAP Labs. Rahul holds an MBA in International Marketing from ICFAI, Hyderabad, India. Currently he is associated with Japan Foundation as well.",
+    bio: "bioRahulMishra",
     image: "team-member-5",
   },
   {
     name: "Shri Lokendra Rana",
     role: "Executive Director",
-    bio: "Shri Lokendra Rana the Executive Director (International Sales and Marketing) of the company, graduated and post-graduated, Bachelor of Arts in English, Economics, and Sociology and completed his masters in English Literature. Additional to the academic degrees, he has done Japanese Language and obtained the JLPT certification Level-3 in the year 2005 from the Japan Foundation and Japan Educational Exchanges and Services. He did his Post Graduate Diploma in International Business and did his MBA in Marketing, He also did a certificate course in C, C++, Linux, Unix, and also a part of the core team to get implement SAP S4/HANA implementation in his company at Ethiopia Plant. He also served in Bangladesh as Head Operations (CEO) and the last assignment was in Ethiopia, Africa in the capacity of General Manager. He has won the Best Team Performance award from Raymond’s in 2013 and has vast work experience Internationally & Nationally in various companies. He also specialized skill of traditional North Indian farming and has over two decades of experience. He has a good knowledge of the Indian share market and cryptocurrency trade. He did inceptions of two plants in his career from the Greenfield project to commissioning. Mr. Rana has joined ACS as Executive Director of Aamida Infotech.",
+    bio: "bioLokendraRana",
     image: "team-member-6",
   },
   {
     name: "Shri Surajit kalita",
     role: "INTERNATIONAL TRADE & BUSINESS CONSULTANT",
-    bio: "Shri Surajit Kalita is working for Aamida Consulting Services (North East Region) as (International Trade & Business Consultant). With 13+ years of experience in consulting, Mr Surajit Kalita has also vast experience in concept management, strategic management and planning. He have served as an advisor, coordinator and negotiator with several organisation. Surajit has started his career as a consultant and contributed in various sectors like education, sports, corporate service industry in Bangalore, Kolkata and Delhi. He has also worked with the International MBNA Bank located in Canada which has merged with Bank of America in B to B process from IT City Bangalore India. Later on he gained the experiences by working with an International Company called RE/MAX located in USA & Canada as a Franchise sales Consultant .",
+    bio: "bioSurajitKalita",
     image: "team-member-7",
   },
   {
     name: "Shri Manisha Mondal Tripathi",
     role: "JAPAN TRADE & BUSINESS CONSULTANT",
-    bio: "Shri Manisha is working with Aamida Consulting Services as Japan Business Coordinator and hold BA(Hons)graduate in Japanese language, junior mombushou participated in Japan Foundation, Japan. 13 yes work experience with topmost Jap multinational companies. She worked as a country host cum coordinator with commerce ministry group ITPO 2005Aichi expo, Nagoya.From 2006 to 2008 worked Suzuki head office Hamamatsu as a translator and group leader. She worked in Hero moto corp as a deputy manager, cum interpreter in the RND division from 2008 to 2014. As a social service guiding to Japanese classes in DPS Gurgaon",
+    bio: "bioManishaMondalTripathi",
     image: "team-member-8",
   },
 ];

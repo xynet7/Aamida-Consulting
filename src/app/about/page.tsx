@@ -86,6 +86,7 @@ export default function AboutPage() {
           <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {teamMembers.map((member) => {
               const memberImage = PlaceHolderImages.find(p => p.id === member.image);
+              const translatedBio = t(member.bio);
               return (
                 <Dialog key={member.name}>
                   <Card
@@ -100,7 +101,7 @@ export default function AboutPage() {
                           </Avatar>
                           <h3 className="mt-4 font-headline text-xl font-semibold">{member.name}</h3>
                           <p className="text-sm font-medium text-primary">{member.role}</p>
-                          <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{member.bio}</p>
+                          <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{translatedBio}</p>
                         </div>
                       </DialogTrigger>
                     </CardContent>
@@ -119,7 +120,7 @@ export default function AboutPage() {
                       </DialogTitle>
                     </DialogHeader>
                     <div className="prose prose-sm max-w-none max-h-[60vh] overflow-y-auto text-muted-foreground pr-4">
-                      <p>{member.bio}</p>
+                      <p>{translatedBio}</p>
                     </div>
                     <DialogClose asChild>
                       <Button type="button" variant="secondary" className="mt-4">
