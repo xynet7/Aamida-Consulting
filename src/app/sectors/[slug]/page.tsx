@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { services, type Service } from "@/lib/data";
+import { services } from "@/lib/data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
@@ -30,7 +30,7 @@ import { useTranslation } from "@/hooks/use-translation";
 // }
 
 
-const otherServices = (currentSlug: string): Service[] => {
+const otherServices = (currentSlug: string) => {
   return services.filter(s => s.slug !== currentSlug).slice(0, 3);
 }
 
@@ -44,6 +44,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
 
   const image = PlaceHolderImages.find(p => p.id === service.image);
   const sideServices = otherServices(service.slug);
+  const serviceTitle = t(service.title);
 
   return (
     <div className="bg-background">
@@ -53,10 +54,10 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
              <Link href="/sectors"><ArrowLeft className="mr-2 h-4 w-4" /> {t('backToSectors')}</Link>
            </Button>
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            {service.title}
+            {serviceTitle}
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-            {service.description}
+            {t(service.description)}
           </p>
         </div>
       </header>
@@ -68,7 +69,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
               <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-lg">
                  <Image
                   src={image.imageUrl}
-                  alt={service.title}
+                  alt={serviceTitle}
                   fill
                   className="object-cover"
                   data-ai-hint={image.imageHint}
@@ -76,7 +77,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
               </div>
             )}
             <div className="prose prose-lg max-w-none text-foreground prose-headings:font-headline prose-headings:text-primary">
-              <p>{service.longDescription}</p>
+              <p>{t(service.longDescription)}</p>
 
               <h3 className="mt-12">{t('keyBenefits')}</h3>
               <ul className="not-prose mt-4 space-y-2 list-none p-0">
@@ -99,8 +100,8 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                   {sideServices.map(sideService => (
                     <li key={sideService.slug}>
                       <Link href={`/sectors/${sideService.slug}`} className="group">
-                        <p className="font-semibold group-hover:text-primary transition-colors">{sideService.title}</p>
-                        <p className="text-sm text-muted-foreground">{sideService.description}</p>
+                        <p className="font-semibold group-hover:text-primary transition-colors">{t(sideService.title)}</p>
+                        <p className="text-sm text-muted-foreground">{t(sideService.description)}</p>
                       </Link>
                     </li>
                   ))}
@@ -112,7 +113,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
                 <CardTitle className="font-headline text-xl">{t('readyToStart')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-primary-foreground/80">{t('readyToStartSubtitle', { serviceTitle: service.title })}</p>
+                <p className="text-sm text-primary-foreground/80">{t('readyToStartSubtitle', { serviceTitle: serviceTitle })}</p>
                 <Button asChild variant="secondary" className="mt-4 w-full bg-accent text-accent-foreground hover:bg-accent/90">
                   <Link href="/contact">{t('contactUsShort')}</Link>
                 </Button>

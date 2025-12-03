@@ -40,7 +40,7 @@ export default function SectorsPage() {
                     <div className="relative h-56 w-full">
                        <Image
                         src={image.imageUrl}
-                        alt={service.title}
+                        alt={t(service.title)}
                         fill
                         className="object-cover"
                         data-ai-hint={image.imageHint}
@@ -48,10 +48,10 @@ export default function SectorsPage() {
                     </div>
                   )}
                   <CardHeader>
-                    <CardTitle className="font-headline text-xl">{service.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl">{t(service.title)}</CardTitle>
                   </CardHeader>
                   <CardContent className="flex-grow">
-                    <CardDescription>{service.description}</CardDescription>
+                    <CardDescription>{t(service.description)}</CardDescription>
                   </CardContent>
                   <CardFooter>
                     <Button asChild variant="default" className="w-full">
