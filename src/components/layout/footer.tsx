@@ -25,12 +25,12 @@ export function Footer() {
           <div className="md:col-span-4">
             <Logo />
             <p className="mt-4 text-sm text-muted-foreground">
-              Driving business growth through expert strategy, finance, and innovation.
+              {t('footerSlogan')}
             </p>
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">Navigate</h3>
+            <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">{t('navigate')}</h3>
             <ul className="mt-4 space-y-2">
               {navItems.map((item) => (
                 <li key={item.title}>
@@ -43,15 +43,15 @@ export function Footer() {
           </div>
 
           <div className="md:col-span-3">
-             <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">Legal</h3>
+             <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">{t('legal')}</h3>
             <ul className="mt-4 space-y-2">
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</Link></li>
+              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">{t('privacyPolicy')}</Link></li>
+              <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary">{t('termsOfService')}</Link></li>
             </ul>
           </div>
 
           <div className="md:col-span-3">
-            <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">Connect</h3>
+            <h3 className="font-headline text-sm font-semibold uppercase tracking-wider">{t('connect')}</h3>
             <div className="mt-4 flex space-x-4">
               {socialLinks.map((social) => (
                 <Button key={social.name} variant="ghost" size="icon" asChild>
@@ -65,7 +65,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Aamida Consulting. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {t('copyright')}</p>
         </div>
       </div>
     </footer>
