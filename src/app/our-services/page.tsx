@@ -14,58 +14,58 @@ export default function OurServicesPage() {
   const services = [
     {
         Icon: Briefcase,
-        title: "Legal Consulting",
-        description: "Navigating complex legal landscapes to support your business’s compliance and regulatory needs.",
+        title: t('legalConsultingTitle'),
+        description: t('legalConsultingDesc'),
     },
     {
         Icon: Plane,
-        title: "Business Trips",
-        description: "Organizing tailored business travel plans to facilitate international partnerships and networking opportunities.",
+        title: t('businessTripsTitle'),
+        description: t('businessTripsDesc'),
     },
     {
         Icon: Megaphone,
-        title: "Advertising",
-        description: "Crafting strategic marketing campaigns to enhance your brand visibility and market reach.",
+        title: t('advertisingTitle'),
+        description: t('advertisingDesc'),
     },
     {
         Icon: Users,
-        title: "B2B Consulting",
-        description: "Delivering expert advice and solutions to strengthen business-to-business relationships.",
+        title: t('b2bConsultingTitle'),
+        description: t('b2bConsultingDesc'),
     },
     {
         Icon: Rocket,
-        title: "Angel Investment & Venture Capital",
-        description: "Connecting startups and growth-stage companies with potential investors to fuel innovation and development.",
+        title: t('angelInvestmentTitle'),
+        description: t('angelInvestmentDesc'),
     },
 ];
 
 const supportItems = [
     {
         Icon: Handshake,
-        title: "Facilitating liaison and partnerships",
+        title: t('supportPartnerships'),
     },
     {
         Icon: Briefcase,
-        title: "Product sourcing and trading",
+        title: t('supportSourcing'),
     },
     {
         Icon: Target,
-        title: "Market penetration strategies tailored for both Indian and international markets",
+        title: t('supportStrategies'),
     },
 ];
 
 const educationItems = [
     {
         Icon: Plane,
-        title: "Organized educational trips abroad for schools and colleges.",
+        title: t('educationTrips'),
     },
     {
         Icon: GraduationCap,
-        title: "Specialized principal trips.",
+        title: t('educationPrincipalTrips'),
     },
     {
         Icon: Globe,
-        title: "Exchange programs fostering cultural and academic collaboration.",
+        title: t('educationExchangePrograms'),
     },
 ];
 

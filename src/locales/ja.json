@@ -114,5 +114,21 @@
     "servicesSubNav": "サービス",
     "eventsSubNav": "イベント",
     "supportSubNav": "サポート",
-    "educationSubNav": "教育"
+    "educationSubNav": "教育",
+    "legalConsultingTitle": "法律コンサルティング",
+    "legalConsultingDesc": "複雑な法的状況を乗り越え、ビジネスのコンプライアンスと規制のニーズをサポートします。",
+    "businessTripsTitle": "出張",
+    "businessTripsDesc": "国際的なパートナーシップとネットワーキングの機会を促進するために、カスタマイズされた出張計画を組織します。",
+    "advertisingTitle": "広告",
+    "advertisingDesc": "ブランドの可視性と市場でのリーチを高めるための戦略的なマーケティングキャンペーンを作成します。",
+    "b2bConsultingTitle": "B2Bコンサルティング",
+    "b2bConsultingDesc": "企業間関係を強化するための専門的なアドバイスとソリューションを提供します。",
+    "angelInvestmentTitle": "エンジェル投資とベンチャーキャピタル",
+    "angelInvestmentDesc": "スタートアップや成長段階の企業を潜在的な投資家と結びつけ、イノベーションと開発を促進します。",
+    "supportPartnerships": "リエゾンとパートナーシップの促進",
+    "supportSourcing": "製品の調達と取引",
+    "supportStrategies": "インド市場と国際市場の両方に合わせた市場浸透戦略",
+    "educationTrips": "学校や大学向けの海外教育旅行を企画。",
+    "educationPrincipalTrips": "専門の校長旅行。",
+    "educationExchangePrograms": "文化的および学術的協力を促進する交換プログラム。"
 }
