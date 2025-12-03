@@ -14,6 +14,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
+  DialogTrigger,
+  DialogClose,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 import { useTranslation } from "@/hooks/use-translation";
