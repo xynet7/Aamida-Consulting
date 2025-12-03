@@ -6,37 +6,32 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Building2, BarChart, Network } from "lucide-react";
 import { useTranslation } from "@/hooks/use-translation";
 
-// export const metadata = {
-//   title: "Why India Now | Aamida Consulting",
-//   description: "Discover why this is the decade of India and the key drivers behind its economic growth.",
-// };
-
-const keyDrivers = [
-    {
-      Icon: Users,
-      title: "The Demographic Dividend",
-      description: "India has the world's largest youth population. This is not just a workforce; it is a massive, aspiring consumer class driving demand for decades to come.",
-    },
-    {
-      Icon: Building2,
-      title: 'The "China Plus One" Strategy',
-      description: "As global supply chains diversify, India has emerged as the most viable, scalable manufacturing alternative, backed by government incentives (PLI Schemes).",
-    },
-    {
-      Icon: Network,
-      title: "Digital Public Infrastructure",
-      description: "With the success of UPI (Unified Payments Interface) and the India Stack, the country has leapfrogged into a digital-first economy, making it easier for tech and fintech companies to scale.",
-    },
-    {
-        Icon: BarChart,
-        title: "Infrastructure Boom",
-        description: "From new airports to freight corridors, India is modernizing its logistics backbone at a record pace, reducing the cost of logistics and easing market access.",
-    }
-];
-
 export default function WhyIndiaPage() {
   const { t } = useTranslation();
   const heroImage = PlaceHolderImages.find(p => p.id === 'why-india-hero');
+
+  const keyDrivers = [
+    {
+      Icon: Users,
+      title: t('demographicDividendTitle'),
+      description: t('demographicDividendDesc'),
+    },
+    {
+      Icon: Building2,
+      title: t('chinaPlusOneTitle'),
+      description: t('chinaPlusOneDesc'),
+    },
+    {
+      Icon: Network,
+      title: t('digitalInfrastructureTitle'),
+      description: t('digitalInfrastructureDesc'),
+    },
+    {
+        Icon: BarChart,
+        title: t('infrastructureBoomTitle'),
+        description: t('infrastructureBoomDesc'),
+    }
+  ];
 
   return (
     <div className="bg-background">
@@ -90,3 +85,5 @@ export default function WhyIndiaPage() {
     </div>
   );
 }
+
+    
