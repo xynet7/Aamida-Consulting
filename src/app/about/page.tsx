@@ -13,13 +13,14 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
   DialogClose,
   DialogDescription,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
 export default function AboutPage() {
+  const { t } = useTranslation();
   const aboutImage = PlaceHolderImages.find(p => p.id === 'about-us-main');
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
@@ -28,10 +29,10 @@ export default function AboutPage() {
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            The Private Sector Catalyst for India's Economic Story.
+            {t('aboutHeaderTitle')}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            We transform market potential into tangible success through actionable on-ground intelligence and deep regulatory liaison capabilities.
+            {t('aboutHeaderSubtitle')}
           </p>
         </div>
       </header>
@@ -51,20 +52,20 @@ export default function AboutPage() {
           )}
           <div className="flex flex-col justify-center">
              <p className="text-muted-foreground">
-                At Aamida Consulting Services, we believe that the right guidance transforms market potential into tangible success. We were founded on the principle that foreign investment requires more than just data; it requires actionable on-ground intelligence and deep regulatory liaison capabilities.
+                {t('aboutIntro1')}
             </p>
             <p className="mt-4 text-muted-foreground">
-                While government bodies promote the macro opportunity, Aamida is your dedicated private partner focused exclusively on your success. We act as an extension of your team in India, providing the crucial "ease of doing business" support needed to establish a foothold. Our team comprises policy experts, legal advisors, financial strategists, and industry veterans who understand the nuances of federal structures and state-level policies in India.
+                {t('aboutIntro2')}
             </p>
-            <h2 className="mt-8 font-headline text-3xl font-bold">Our Mission</h2>
+            <h2 className="mt-8 font-headline text-3xl font-bold">{t('ourMission')}</h2>
              <p className="mt-4 text-muted-foreground">
-                To de-risk investment into India and accelerate operational timelines for global companies.
+                {t('ourMissionText')}
             </p>
-            <h2 className="mt-8 font-headline text-3xl font-bold">The Aamida Advantage</h2>
+            <h2 className="mt-8 font-headline text-3xl font-bold">{t('aamidaAdvantage')}</h2>
             <ul className="mt-4 space-y-2 text-muted-foreground">
-              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>Agility:</strong> Private sector speed in executing market entry plans.</li>
-              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>Integrity:</strong> Unwavering commitment to ethical compliance and transparency.</li>
-              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>Depth:</strong> Deep networks across government bodies and industry associations.</li>
+              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>{t('advantageAgility').split(':')[0]}:</strong> {t('advantageAgility').split(':')[1]}</li>
+              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>{t('advantageIntegrity').split(':')[0]}:</strong> {t('advantageIntegrity').split(':')[1]}</li>
+              <li className="flex items-start"><span className="text-accent font-bold mr-2">&#9679;</span> <strong>{t('advantageDepth').split(':')[0]}:</strong> {t('advantageDepth').split(':')[1]}</li>
             </ul>
           </div>
         </div>
@@ -74,10 +75,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-              Meet Our Leadership
+              {t('meetOurLeadership')}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our team combines deep industry knowledge with a commitment to client success.
+              {t('leadershipSubtitle')}
             </p>
           </div>
 
@@ -125,7 +126,7 @@ export default function AboutPage() {
                 </div>
                 <DialogClose asChild>
                   <Button type="button" variant="secondary" className="mt-4">
-                    Close
+                    {t('close')}
                   </Button>
                 </DialogClose>
               </DialogContent>
@@ -136,3 +137,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+    

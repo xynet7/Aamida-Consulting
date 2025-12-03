@@ -1,12 +1,17 @@
 
+"use client";
 import { Handshake, Briefcase, Megaphone, Users, Rocket, Calendar, Target, GraduationCap, Plane, Globe } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
-export const metadata = {
-  title: "Our Services | Aamida Consulting",
-  description: "Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions.",
-};
+// export const metadata = {
+//   title: "Our Services | Aamida Consulting",
+//   description: "Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions.",
+// };
 
-const services = [
+export default function OurServicesPage() {
+  const { t } = useTranslation();
+
+  const services = [
     {
         Icon: Briefcase,
         title: "Legal Consulting",
@@ -65,16 +70,15 @@ const educationItems = [
 ];
 
 
-export default function OurServicesPage() {
   return (
     <div className="bg-background">
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            Our Services
+            {t('servicesPageTitle')}
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-lg text-muted-foreground">
-            Aamida Consulting Services is a dynamic, multidirectional business consulting firm dedicated to empowering organizations with strategic solutions. We specialize in connecting businesses with global opportunities, fostering growth through innovative consulting, investment facilitation, and expert guidance. Our mission is to enable seamless expansion and success in diverse markets by offering personalized, actionable insights and support.
+            {t('servicesPageSubtitle')}
           </p>
         </div>
       </header>
@@ -82,7 +86,7 @@ export default function OurServicesPage() {
       <main className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6 space-y-16">
           <section id="services">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">Our Comprehensive Suite of Services</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-12">{t('comprehensiveServices')}</h2>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service) => (
                  <div key={service.title} className="flex items-start gap-6">
@@ -101,9 +105,9 @@ export default function OurServicesPage() {
           <section id="events" className="bg-secondary rounded-lg p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
                  <div>
-                    <h2 className="font-headline text-3xl font-bold tracking-tight">Events</h2>
+                    <h2 className="font-headline text-3xl font-bold tracking-tight">{t('eventsTitle')}</h2>
                      <p className="mt-4 text-lg text-muted-foreground">
-                        Stay informed with our sector-specific upcoming events, including business trips and networking opportunities across multiple countries. Our carefully curated calendar offers monthly options tailored to various industries, bringing you the best global exposure and collaboration prospects.
+                        {t('eventsSubtitle')}
                      </p>
                  </div>
                  <div className="flex items-center justify-center">
@@ -113,9 +117,9 @@ export default function OurServicesPage() {
           </section>
 
           <section id="support">
-            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">Support for Your Expansion</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">{t('supportExpansion')}</h2>
              <p className="text-lg text-muted-foreground text-center max-w-4xl mx-auto mb-12">
-                Aamida Consulting Services supports your business expansion in India and abroad. We ensure a seamless approach to marketing and operations across borders, helping you achieve sustainable growth through:
+                {t('supportExpansionSubtitle')}
             </p>
             <div className="grid gap-8 md:grid-cols-3">
               {supportItems.map((item) => (
@@ -131,9 +135,9 @@ export default function OurServicesPage() {
           
           <section id="education" className="bg-secondary rounded-lg p-8 md:p-12">
             <div className="max-w-4xl mx-auto">
-                <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">Education</h2>
+                <h2 className="font-headline text-3xl font-bold tracking-tight text-center mb-6">{t('educationTitle')}</h2>
                 <p className="text-lg text-muted-foreground text-center mb-10">
-                    Our educational programs open doors to global learning experiences. These programs are designed to enrich knowledge, broaden worldviews, and create valuable international connections for students and institutions.
+                    {t('educationSubtitle')}
                 </p>
                 <div className="grid gap-8 md:grid-cols-3">
                     {educationItems.map((item) => (
@@ -153,3 +157,5 @@ export default function OurServicesPage() {
     </div>
   );
 }
+
+    

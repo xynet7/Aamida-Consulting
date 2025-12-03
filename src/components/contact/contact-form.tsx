@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useForm } from "react-hook-form";
@@ -19,6 +20,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { handleContactForm } from "@/lib/actions";
 import { Loader2 } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -36,6 +38,7 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+  const { t } = useTranslation();
   const [isPending, startTransition] = useTransition();
   const { toast } = useToast();
 
@@ -54,14 +57,14 @@ export function ContactForm() {
       const result = await handleContactForm(values);
       if (result.success) {
         toast({
-          title: "Message Sent!",
-          description: "Thank you for contacting us. We will get back to you shortly.",
+          title: t('formSuccessTitle'),
+          description: t('formSuccessDesc'),
         });
         form.reset();
       } else {
         toast({
           variant: "destructive",
-          title: "Uh oh! Something went wrong.",
+          title: t('formErrorTitle'),
           description: result.message,
         });
       }
@@ -76,9 +79,9 @@ export function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Full Name</FormLabel>
+              <FormLabel>{t('formFullName')}</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} disabled={isPending} />
+                <Input placeholder={t('formFullNamePlaceholder')} {...field} disabled={isPending} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -89,9 +92,9 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email Address</FormLabel>
+              <FormLabel>{t('formEmail')}</FormLabel>
               <FormControl>
-                <Input placeholder="john.doe@example.com" {...field} disabled={isPending} />
+                <Input placeholder={t('formEmailPlaceholder')} {...field} disabled={isPending} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -102,9 +105,9 @@ export function ContactForm() {
           name="subject"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Subject</FormLabel>
+              <FormLabel>{t('formSubject')}</FormLabel>
               <FormControl>
-                <Input placeholder="Regarding a consultation" {...field} disabled={isPending} />
+                <Input placeholder={t('formSubjectPlaceholder')} {...field} disabled={isPending} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -115,10 +118,10 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{t('formMessage')}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us about your project or inquiry..."
+                  placeholder={t('formMessagePlaceholder')}
                   className="min-h-[120px]"
                   {...field}
                   disabled={isPending}
@@ -130,9 +133,11 @@ export function ContactForm() {
         />
         <Button type="submit" className="w-full" disabled={isPending}>
           {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-          Send Message
+          {t('formSendButton')}
         </Button>
       </form>
     </Form>
   );
 }
+
+    

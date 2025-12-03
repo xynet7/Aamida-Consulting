@@ -1,3 +1,7 @@
+
+"use client";
+import { useTranslation } from "@/hooks/use-translation";
+
 const stats = [
   { value: "#1", label: "Fastest Growing Major Economies" },
   { value: "3B+", label: "Consumer Market Base" },
@@ -6,12 +10,13 @@ const stats = [
 ];
 
 export default function WhyIndiaSection() {
+  const { t } = useTranslation();
   return (
     <section className="bg-background py-16 sm:py-24">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center mb-12">
             <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-                The World at a Glance
+                {t('worldAtGlance')}
             </h2>
         </div>
         <div className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
@@ -30,3 +35,5 @@ export default function WhyIndiaSection() {
     </section>
   );
 }
+
+    

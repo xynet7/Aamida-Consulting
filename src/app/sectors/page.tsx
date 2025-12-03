@@ -1,4 +1,5 @@
 
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/lib/data";
@@ -6,22 +7,24 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
-export const metadata = {
-  title: "Key Sectors | Aamida Consulting",
-  description: "Explore the comprehensive consulting services offered by Aamida Consulting, from strategy and finance to technology and operations.",
-};
+// export const metadata = {
+//   title: "Key Sectors | Aamida Consulting",
+//   description: "Explore the comprehensive consulting services offered by Aamida Consulting, from strategy and finance to technology and operations.",
+// };
 
 export default function SectorsPage() {
+  const { t } = useTranslation();
   return (
     <div className="bg-background">
       <header className="bg-secondary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center md:px-6">
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-            Deep Expertise in India's Growth Sectors
+            {t('sectorsPageTitle')}
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            We offer specialized consulting services for India's most dynamic industries.
+            {t('sectorsPageSubtitle')}
           </p>
         </div>
       </header>
@@ -53,7 +56,7 @@ export default function SectorsPage() {
                   <CardFooter>
                     <Button asChild variant="default" className="w-full">
                       <Link href={`/sectors/${service.slug}`}>
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                        {t('learnMore')} <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </CardFooter>
@@ -66,3 +69,5 @@ export default function SectorsPage() {
     </div>
   );
 }
+
+    

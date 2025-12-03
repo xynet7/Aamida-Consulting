@@ -1,4 +1,5 @@
 
+"use client";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,25 +8,26 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslation } from "@/hooks/use-translation";
 
-export function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
-}
+// export function generateStaticParams() {
+//   return services.map((service) => ({
+//     slug: service.slug,
+//   }));
+// }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
-  if (!service) {
-    return {
-      title: "Sector Not Found",
-    };
-  }
-  return {
-    title: `${service.title} | Aamida Consulting`,
-    description: service.description,
-  };
-}
+// export function generateMetadata({ params }: { params: { slug: string } }) {
+//   const service = services.find((s) => s.slug === params.slug);
+//   if (!service) {
+//     return {
+//       title: "Sector Not Found",
+//     };
+//   }
+//   return {
+//     title: `${service.title} | Aamida Consulting`,
+//     description: service.description,
+//   };
+// }
 
 
 const otherServices = (currentSlug: string): Service[] => {
@@ -33,6 +35,7 @@ const otherServices = (currentSlug: string): Service[] => {
 }
 
 export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
+  const { t } = useTranslation();
   const service = services.find((s) => s.slug === params.slug);
 
   if (!service) {
@@ -47,7 +50,7 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
        <header className="bg-secondary py-12">
         <div className="container mx-auto px-4 md:px-6">
            <Button asChild variant="ghost" className="mb-4">
-             <Link href="/sectors"><ArrowLeft className="mr-2 h-4 w-4" /> Back to Sectors</Link>
+             <Link href="/sectors"><ArrowLeft className="mr-2 h-4 w-4" /> {t('backToSectors')}</Link>
            </Button>
           <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
             {service.title}
@@ -75,21 +78,21 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             <div className="prose prose-lg max-w-none text-foreground prose-headings:font-headline prose-headings:text-primary">
               <p>{service.longDescription}</p>
 
-              <h3 className="mt-12">Key Benefits</h3>
+              <h3 className="mt-12">{t('keyBenefits')}</h3>
               <ul className="not-prose mt-4 space-y-2 list-none p-0">
-                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>Gain market leadership with data-driven strategies.</span></li>
-                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>Optimize performance for long-term financial stability.</span></li>
-                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>Unlock competitive advantages with cutting-edge technology.</span></li>
+                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>{t('benefit1')}</span></li>
+                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>{t('benefit2')}</span></li>
+                  <li className="flex items-start"><CheckCircle2 className="h-5 w-5 text-accent mr-3 mt-1 flex-shrink-0" /><span>{t('benefit3')}</span></li>
               </ul>
               
-              <p>Our team of experts collaborates closely with you to understand your unique challenges and goals, delivering tailored solutions that drive measurable results. We believe in a partnership approach, ensuring that our strategies are not only innovative but also practical and sustainable for your organization.</p>
+              <p>{t('expertCollaboration')}</p>
             </div>
           </main>
 
           <aside className="mt-12 lg:mt-0">
             <Card>
               <CardHeader>
-                <CardTitle className="font-headline text-xl">Other Sectors</CardTitle>
+                <CardTitle className="font-headline text-xl">{t('otherSectors')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
@@ -106,12 +109,12 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
             </Card>
             <Card className="mt-8 bg-primary text-primary-foreground">
                <CardHeader>
-                <CardTitle className="font-headline text-xl">Ready to Start?</CardTitle>
+                <CardTitle className="font-headline text-xl">{t('readyToStart')}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-primary-foreground/80">Let's discuss how our {service.title} expertise can help your business.</p>
+                <p className="text-sm text-primary-foreground/80">{t('readyToStartSubtitle', { serviceTitle: service.title })}</p>
                 <Button asChild variant="secondary" className="mt-4 w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                  <Link href="/contact">Contact Us</Link>
+                  <Link href="/contact">{t('contactUsShort')}</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -121,3 +124,5 @@ export default function ServiceDetailPage({ params }: { params: { slug: string }
     </div>
   );
 }
+
+    

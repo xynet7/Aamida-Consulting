@@ -1,35 +1,40 @@
+
+"use client";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ContactForm } from "@/components/contact/contact-form";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
-export const metadata = {
-  title: "Contact Us | Aamida Consulting",
-  description: "Get in touch with Aamida Consulting to discuss your business needs. We're here to help you succeed.",
-};
+// export const metadata = {
+//   title: "Contact Us | Aamida Consulting",
+//   description: "Get in touch with Aamida Consulting to discuss your business needs. We're here to help you succeed.",
+// };
 
-const contactDetails = [
+
+export default function ContactPage() {
+  const { t } = useTranslation();
+  const contactImage = PlaceHolderImages.find(p => p.id === 'contact-hero');
+  
+  const contactDetails = [
     {
       Icon: Mail,
-      title: "Email",
+      title: t('email'),
       value: "info@aamidaconsulting.com",
       href: "mailto:info@aamidaconsulting.com",
     },
     {
       Icon: Phone,
-      title: "Phone",
+      title: t('phone'),
       value: "+91 80108 81075",
       href: "tel:+918010881075",
     },
     {
       Icon: MapPin,
-      title: "Address",
+      title: t('address'),
       value: "Plot No. 15, Vasantnagar, near Ganesh mandir, Adai, Panvel, Navi Mumbai, Raigad, Maharashtra 410206",
     },
   ];
-
-export default function ContactPage() {
-  const contactImage = PlaceHolderImages.find(p => p.id === 'contact-hero');
 
   return (
     <div className="bg-background">
@@ -47,10 +52,10 @@ export default function ContactPage() {
         <div className="relative z-10 flex h-full items-center justify-center text-center">
             <div className="container mx-auto px-4 md:px-6">
                 <h1 className="font-headline text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl">
-                    Get in Touch
+                    {t('getInTouch')}
                 </h1>
                 <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/90">
-                    We're here to answer your questions and help you get started on your journey to success.
+                    {t('getInTouchSubtitle')}
                 </p>
             </div>
         </div>
@@ -61,9 +66,9 @@ export default function ContactPage() {
           <div className="grid gap-16 lg:grid-cols-2">
             <div className="space-y-8">
               <div>
-                <h2 className="font-headline text-3xl font-bold">Contact Information</h2>
+                <h2 className="font-headline text-3xl font-bold">{t('contactInformation')}</h2>
                 <p className="mt-2 text-muted-foreground">
-                  Reach out to us through any of the following channels. We look forward to hearing from you.
+                  {t('contactInfoSubtitle')}
                 </p>
               </div>
               <div className="space-y-6">
@@ -86,9 +91,9 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="font-headline text-3xl font-bold">Send Us a Message</h2>
+              <h2 className="font-headline text-3xl font-bold">{t('sendMessage')}</h2>
               <p className="mt-2 text-muted-foreground">
-                Fill out the form below, and one of our consultants will get back to you shortly.
+                {t('sendMessageSubtitle')}
               </p>
               <div className="mt-8">
                 <ContactForm />
@@ -100,3 +105,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+    

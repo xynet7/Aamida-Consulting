@@ -1,4 +1,5 @@
 
+"use client";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,25 +7,26 @@ import { blogPosts } from "@/lib/blog-data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, User, Calendar } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
-export function generateStaticParams() {
-    return blogPosts.map((post) => ({
-      slug: post.slug,
-    }));
-  }
+// export function generateStaticParams() {
+//     return blogPosts.map((post) => ({
+//       slug: post.slug,
+//     }));
+//   }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((p) => p.slug === params.slug);
-  if (!post) {
-    return {
-      title: "Post Not Found",
-    };
-  }
-  return {
-    title: `${post.title} | Aamida Consulting`,
-    description: post.excerpt,
-  };
-}
+// export function generateMetadata({ params }: { params: { slug: string } }) {
+//   const post = blogPosts.find((p) => p.slug === params.slug);
+//   if (!post) {
+//     return {
+//       title: "Post Not Found",
+//     };
+//   }
+//   return {
+//     title: `${post.title} | Aamida Consulting`,
+//     description: post.excerpt,
+//   };
+// }
 
 const renderContent = (content: { type: string; text: string | string[] }) => {
     switch (content.type) {
@@ -50,6 +52,7 @@ const renderContent = (content: { type: string; text: string | string[] }) => {
 
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
+    const { t } = useTranslation();
     const post = blogPosts.find((p) => p.slug === params.slug);
 
     if (!post) {
@@ -63,7 +66,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
              <header className="bg-secondary py-12">
                 <div className="container mx-auto px-4 md:px-6">
                     <Button asChild variant="ghost" className="mb-4">
-                        <Link href="/blog"><ArrowLeft className="mr-2 h-4 w-4" /> Back to Blog</Link>
+                        <Link href="/blog"><ArrowLeft className="mr-2 h-4 w-4" /> {t('backToBlog')}</Link>
                     </Button>
                     <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
                         {post.title}
@@ -104,7 +107,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         </div>
                         <div className="mt-12 border-t pt-8">
                             <Button asChild variant="outline">
-                                <Link href="/contact">Discuss Your India Strategy</Link>
+                                <Link href="/contact">{t('discussIndiaStrategy')}</Link>
                             </Button>
                         </div>
                     </div>
@@ -113,3 +116,5 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         </div>
     );
 }
+
+    

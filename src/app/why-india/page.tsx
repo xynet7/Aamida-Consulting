@@ -1,12 +1,15 @@
+
+"use client";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, Building2, BarChart, Network } from "lucide-react";
+import { useTranslation } from "@/hooks/use-translation";
 
-export const metadata = {
-  title: "Why India Now | Aamida Consulting",
-  description: "Discover why this is the decade of India and the key drivers behind its economic growth.",
-};
+// export const metadata = {
+//   title: "Why India Now | Aamida Consulting",
+//   description: "Discover why this is the decade of India and the key drivers behind its economic growth.",
+// };
 
 const keyDrivers = [
     {
@@ -32,6 +35,7 @@ const keyDrivers = [
 ];
 
 export default function WhyIndiaPage() {
+  const { t } = useTranslation();
   const heroImage = PlaceHolderImages.find(p => p.id === 'why-india-hero');
 
   return (
@@ -50,10 +54,10 @@ export default function WhyIndiaPage() {
         <div className="relative z-10 flex h-full items-center justify-center text-center">
           <div className="container mx-auto px-4 md:px-6">
             <h1 className="font-headline text-4xl font-bold tracking-tight text-primary-foreground sm:text-5xl md:text-6xl">
-              The Decade of India.
+              {t('whyIndiaTitle')}
             </h1>
             <p className="mx-auto mt-4 max-w-3xl text-lg text-primary-foreground/90 md:text-xl">
-              Why the world's eyes are on the Indian Subcontinent.
+              {t('whyIndiaSubtitle')}
             </p>
           </div>
         </div>
@@ -62,9 +66,9 @@ export default function WhyIndiaPage() {
       <main className="py-16 sm:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center mb-12">
-            <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">Key Drivers of Growth</h2>
+            <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">{t('keyDriversGrowth')}</h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              A confluence of factors makes India the most compelling investment destination for the next decade.
+              {t('keyDriversSubtitle')}
             </p>
           </div>
 
@@ -86,3 +90,5 @@ export default function WhyIndiaPage() {
     </div>
   );
 }
+
+    

@@ -1,8 +1,10 @@
 
+"use client";
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Briefcase, Search, Locate } from 'lucide-react';
+import { useTranslation } from '@/hooks/use-translation';
 
 const serviceSnapshots = [
   {
@@ -27,13 +29,14 @@ const serviceSnapshots = [
 
 
 export default function ServicesOverview() {
+  const { t } = useTranslation();
 
   return (
     <section className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tight sm:text-4xl">
-            How We Help
+            {t('howWeHelp')}
           </h2>
         </div>
 
@@ -56,7 +59,7 @@ export default function ServicesOverview() {
         <div className="mt-12 text-center">
           <Button asChild size="lg">
             <Link href="/our-services">
-              Explore Our Full Process
+              {t('exploreFullProcess')}
             </Link>
           </Button>
         </div>
@@ -64,3 +67,5 @@ export default function ServicesOverview() {
     </section>
   );
 }
+
+    
