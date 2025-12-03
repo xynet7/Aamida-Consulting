@@ -25,7 +25,7 @@ const PostCard = ({ post }: { post: typeof blogPosts[0] }) => {
                     <div className="relative h-64 w-full md:h-full">
                         <Image
                         src={postImage.imageUrl}
-                        alt={post.title}
+                        alt={t(post.title)}
                         fill
                         className="object-cover"
                         data-ai-hint={postImage.imageHint}
@@ -35,7 +35,7 @@ const PostCard = ({ post }: { post: typeof blogPosts[0] }) => {
                 <div className="flex flex-col justify-center p-8">
                      <CardHeader className="p-0">
                          <h2 className="font-headline text-2xl font-bold tracking-tight text-primary sm:text-3xl">
-                            {post.title}
+                            {t(post.title)}
                         </h2>
                      </CardHeader>
                      <CardContent className="p-0 mt-4">
@@ -50,7 +50,7 @@ const PostCard = ({ post }: { post: typeof blogPosts[0] }) => {
                             </div>
                         </div>
                         <p className="text-muted-foreground leading-relaxed">
-                            {post.excerpt}
+                            {t(post.excerpt)}
                         </p>
                         <Button asChild className="mt-6">
                             <Link href={`/blog/${post.slug}`}>

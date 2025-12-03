@@ -28,29 +28,6 @@ import { useTranslation } from "@/hooks/use-translation";
 //   };
 // }
 
-const renderContent = (content: { type: string; text: string | string[] }) => {
-    switch (content.type) {
-        case 'heading':
-            return <h3>{content.text}</h3>;
-        case 'paragraph':
-            return <p>{content.text}</p>;
-        case 'list':
-            if (Array.isArray(content.text)) {
-                return (
-                    <ul>
-                        {content.text.map((item, index) => (
-                            <li key={index} dangerouslySetInnerHTML={{ __html: item }} />
-                        ))}
-                    </ul>
-                );
-            }
-            return null;
-        default:
-            return null;
-    }
-}
-
-
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
     const { t } = useTranslation();
     const post = blogPosts.find((p) => p.slug === params.slug);
@@ -60,6 +37,29 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     }
 
     const postImage = PlaceHolderImages.find(p => p.id === post.image);
+    
+    const renderContent = (content: { type: string; text: string | string[] }) => {
+        switch (content.type) {
+            case 'heading':
+                return <h3>{t(content.text as string)}</h3>;
+            case 'paragraph':
+                return <p>{t(content.text as string)}</p>;
+            case 'list':
+                if (Array.isArray(content.text)) {
+                    return (
+                        <ul>
+                            {content.text.map((item, index) => (
+                                <li key={index} dangerouslySetInnerHTML={{ __html: t(item) }} />
+                            ))}
+                        </ul>
+                    );
+                }
+                return null;
+            default:
+                return null;
+        }
+    }
+
 
     return (
         <div className="bg-background">
@@ -69,7 +69,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                         <Link href="/blog"><ArrowLeft className="mr-2 h-4 w-4" /> {t('backToBlog')}</Link>
                     </Button>
                     <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl">
-                        {post.title}
+                        {t(post.title)}
                     </h1>
                     <div className="flex items-center gap-4 text-sm text-muted-foreground mt-4">
                         <div className="flex items-center gap-2">
@@ -91,7 +91,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                             <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-lg">
                                 <Image
                                 src={postImage.imageUrl}
-                                alt={post.title}
+                                alt={t(post.title)}
                                 fill
                                 className="object-cover"
                                 data-ai-hint={postImage.imageHint}
@@ -99,7 +99,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                             </div>
                         )}
                         <div className="prose prose-lg max-w-none text-foreground prose-headings:font-headline prose-headings:text-primary">
-                            <p className="lead text-xl text-muted-foreground">{post.excerpt}</p>
+                            <p className="lead text-xl text-muted-foreground">{t(post.excerpt)}</p>
                             
                             {post.content.map((block, index) => (
                                 <div key={index}>{renderContent(block)}</div>
