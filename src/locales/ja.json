@@ -100,7 +100,11 @@
     "digitalInfrastructureTitle": "デジタル公共インフラ",
     "digitalInfrastructureDesc": "UPI（統合決済インターフェース）とIndia Stackの成功により、この国はデジタルファースト経済に飛躍し、テクノロジー企業やフィンテック企業が規模を拡大しやすくなりました。",
     "infrastructureBoomTitle": "インフラブーム",
-    "infrastructureBoomDesc": "新しい空港から貨物回廊まで、インドは記録的なペースで物流バックボーンを近代化しており、物流コストを削減し、市場へのアクセスを容易にしています。"
+    "infrastructureBoomDesc": "新しい空港から貨物回廊まで、インドは記録的なペースで物流バックボーンを近代化しており、物流コストを削減し、市場へのアクセスを容易にしています。",
+    "marketEntryTitle": "市場参入戦略",
+    "marketEntryDesc": "特定の製品と業界の垂直市場向けに設計されたオーダーメイドのロードマップ。",
+    "regulatoryTitle": "規制とコンプライアンス",
+    "regulatoryDesc": "中央および州レベルの承認を正確かつ迅速にナビゲートします。",
+    "locationSearchTitle": "場所とパートナーの検索",
+    "locationSearchDesc": "合弁事業に適した地理と適切な現地パートナーを特定します。"
 }
-
-    

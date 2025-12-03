@@ -6,30 +6,29 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Briefcase, Search, Locate } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation';
 
-const serviceSnapshots = [
-  {
-    title: "Market Entry Strategy",
-    description: "Bespoke roadmaps designed for your specific product and industry vertical.",
-    Icon: Briefcase,
-    href: "/our-services"
-  },
-  {
-    title: "Regulatory & Compliance",
-    description: "Navigating central and state-level approvals with precision and speed.",
-    Icon: Search,
-    href: "/our-services"
-  },
-  {
-    title: "Location & Partner Search",
-    description: "Identifying the right geography and the right local partners for Joint Ventures.",
-    Icon: Locate,
-    href: "/our-services"
-  }
-];
-
-
 export default function ServicesOverview() {
   const { t } = useTranslation();
+
+  const serviceSnapshots = [
+    {
+      title: t('marketEntryTitle'),
+      description: t('marketEntryDesc'),
+      Icon: Briefcase,
+      href: "/our-services"
+    },
+    {
+      title: t('regulatoryTitle'),
+      description: t('regulatoryDesc'),
+      Icon: Search,
+      href: "/our-services"
+    },
+    {
+      title: t('locationSearchTitle'),
+      description: t('locationSearchDesc'),
+      Icon: Locate,
+      href: "/our-services"
+    }
+  ];
 
   return (
     <section className="py-16 sm:py-24 bg-background">
@@ -67,5 +66,3 @@ export default function ServicesOverview() {
     </section>
   );
 }
-
-    
