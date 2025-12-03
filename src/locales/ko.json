@@ -106,5 +106,9 @@
     "regulatoryTitle": "규제 및 규정 준수",
     "regulatoryDesc": "중앙 및 주 차원의 승인을 정밀하고 신속하게 처리합니다.",
     "locationSearchTitle": "위치 및 파트너 검색",
-    "locationSearchDesc": "합작 투자에 적합한 지역과 적절한 현지 파트너를 식별합니다."
+    "locationSearchDesc": "합작 투자에 적합한 지역과 적절한 현지 파트너를 식별합니다.",
+    "statFastestGrowing": "가장 빠르게 성장하는 주요 경제",
+    "statConsumerMarket": "소비자 시장 기반",
+    "statStartupEcosystems": "전 세계 스타트업 생태계",
+    "statInfrastructurePipeline": "인프라 파이프라인"
 }

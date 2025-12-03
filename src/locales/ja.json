@@ -106,5 +106,9 @@
     "regulatoryTitle": "規制とコンプライアンス",
     "regulatoryDesc": "中央および州レベルの承認を正確かつ迅速にナビゲートします。",
     "locationSearchTitle": "場所とパートナーの検索",
-    "locationSearchDesc": "合弁事業に適した地理と適切な現地パートナーを特定します。"
+    "locationSearchDesc": "合弁事業に適した地理と適切な現地パートナーを特定します。",
+    "statFastestGrowing": "最も急成長している主要経済国",
+    "statConsumerMarket": "消費者市場基盤",
+    "statStartupEcosystems": "世界的なスタートアップエコシステム",
+    "statInfrastructurePipeline": "インフラパイプライン"
 }

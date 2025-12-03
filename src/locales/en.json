@@ -106,5 +106,9 @@
     "regulatoryTitle": "Regulatory & Compliance",
     "regulatoryDesc": "Navigating central and state-level approvals with precision and speed.",
     "locationSearchTitle": "Location & Partner Search",
-    "locationSearchDesc": "Identifying the right geography and the right local partners for Joint Ventures."
+    "locationSearchDesc": "Identifying the right geography and the right local partners for Joint Ventures.",
+    "statFastestGrowing": "Fastest Growing Major Economies",
+    "statConsumerMarket": "Consumer Market Base",
+    "statStartupEcosystems": "Startup Ecosystems Globally",
+    "statInfrastructurePipeline": "Infrastructure Pipeline"
 }

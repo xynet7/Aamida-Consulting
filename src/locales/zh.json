@@ -106,5 +106,9 @@
     "regulatoryTitle": "法规与合规",
     "regulatoryDesc": "以精确和快速的方式导航中央和州级批准。",
     "locationSearchTitle": "地点和合作伙伴搜索",
-    "locationSearchDesc": "为合资企业确定合适的地理位置和合适的本地合作伙伴。"
+    "locationSearchDesc": "为合资企业确定合适的地理位置和合适的本地合作伙伴。",
+    "statFastestGrowing": "增长最快的主要经济体",
+    "statConsumerMarket": "消费市场基础",
+    "statStartupEcosystems": "全球创业生态系统",
+    "statInfrastructurePipeline": "基础设施管道"
 }
