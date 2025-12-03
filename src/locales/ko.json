@@ -110,5 +110,9 @@
     "statFastestGrowing": "가장 빠르게 성장하는 주요 경제",
     "statConsumerMarket": "소비자 시장 기반",
     "statStartupEcosystems": "전 세계 스타트업 생태계",
-    "statInfrastructurePipeline": "인프라 파이프라인"
+    "statInfrastructurePipeline": "인프라 파이프라인",
+    "servicesSubNav": "서비스",
+    "eventsSubNav": "이벤트",
+    "supportSubNav": "지원",
+    "educationSubNav": "교육"
 }

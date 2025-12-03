@@ -16,10 +16,10 @@ export const navItems = (t: (key: string) => string): NavItem[] => [
     title: t('ourServices'), 
     href: "/our-services",
     subItems: [
-      { title: "Services", href: "/our-services#services" },
-      { title: "Events", href: "/our-services#events" },
-      { title: "Support", href: "/our-services#support" },
-      { title: "Education", href: "/our-services#education" },
+      { title: t('servicesSubNav'), href: "/our-services#services" },
+      { title: t('eventsSubNav'), href: "/our-services#events" },
+      { title: t('supportSubNav'), href: "/our-services#support" },
+      { title: t('educationSubNav'), href: "/our-services#education" },
     ]
   },
   { title: t('keySectors'), href: "/sectors" },

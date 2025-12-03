@@ -110,5 +110,9 @@
     "statFastestGrowing": "最も急成長している主要経済国",
     "statConsumerMarket": "消費者市場基盤",
     "statStartupEcosystems": "世界的なスタートアップエコシステム",
-    "statInfrastructurePipeline": "インフラパイプライン"
+    "statInfrastructurePipeline": "インフラパイプライン",
+    "servicesSubNav": "サービス",
+    "eventsSubNav": "イベント",
+    "supportSubNav": "サポート",
+    "educationSubNav": "教育"
 }

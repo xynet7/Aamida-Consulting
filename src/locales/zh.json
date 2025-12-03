@@ -110,5 +110,9 @@
     "statFastestGrowing": "增长最快的主要经济体",
     "statConsumerMarket": "消费市场基础",
     "statStartupEcosystems": "全球创业生态系统",
-    "statInfrastructurePipeline": "基础设施管道"
+    "statInfrastructurePipeline": "基础设施管道",
+    "servicesSubNav": "服务",
+    "eventsSubNav": "活动",
+    "supportSubNav": "支持",
+    "educationSubNav": "教育"
 }

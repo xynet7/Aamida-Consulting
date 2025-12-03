@@ -110,5 +110,9 @@
     "statFastestGrowing": "Fastest Growing Major Economies",
     "statConsumerMarket": "Consumer Market Base",
     "statStartupEcosystems": "Startup Ecosystems Globally",
-    "statInfrastructurePipeline": "Infrastructure Pipeline"
+    "statInfrastructurePipeline": "Infrastructure Pipeline",
+    "servicesSubNav": "Services",
+    "eventsSubNav": "Events",
+    "supportSubNav": "Support",
+    "educationSubNav": "Education"
 }
