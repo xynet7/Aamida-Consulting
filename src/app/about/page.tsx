@@ -13,7 +13,6 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogClose,
   DialogDescription,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
@@ -82,60 +81,56 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <Dialog>
-            <div className="mt-12 flex justify-center flex-wrap gap-8">
-              {teamMembers.map((member) => {
-                const memberImage = PlaceHolderImages.find(p => p.id === member.image);
-                return (
-                  <DialogTrigger key={member.name} asChild>
-                    <Card
-                      className="text-center max-w-sm cursor-pointer transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
-                      onClick={() => setSelectedMember(member)}
-                    >
-                      <CardContent className="p-6">
-                        <Avatar className="mx-auto h-32 w-32">
-                          {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
+          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {teamMembers.map((member) => {
+              const memberImage = PlaceHolderImages.find(p => p.id === member.image);
+              return (
+                <Dialog key={member.name}>
+                  <Card
+                    className="text-center cursor-pointer transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  >
+                    <CardContent className="p-6">
+                      <DialogTrigger asChild>
+                        <div>
+                          <Avatar className="mx-auto h-32 w-32">
+                            {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} data-ai-hint={memberImage.imageHint} />}
+                            <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
+                          </Avatar>
+                          <h3 className="mt-4 font-headline text-xl font-semibold">{member.name}</h3>
+                          <p className="text-sm font-medium text-primary">{member.role}</p>
+                          <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{member.bio}</p>
+                        </div>
+                      </DialogTrigger>
+                    </CardContent>
+                  </Card>
+                  <DialogContent className="sm:max-w-[600px]">
+                    <DialogHeader>
+                      <DialogTitle className="flex items-center gap-4">
+                        <Avatar className="h-16 w-16">
+                          {memberImage && <AvatarImage src={memberImage.imageUrl} alt={member.name} />}
                           <AvatarFallback>{member.name.charAt(0)}</AvatarFallback>
                         </Avatar>
-                        <h3 className="mt-4 font-headline text-xl font-semibold">{member.name}</h3>
-                        <p className="text-sm font-medium text-primary">{member.role}</p>
-                         <p className="mt-2 text-sm text-muted-foreground line-clamp-3">{member.bio}</p>
-                      </CardContent>
-                    </Card>
-                  </DialogTrigger>
-                );
-              })}
-            </div>
-
-            {selectedMember && (
-              <DialogContent className="sm:max-w-[600px]">
-                <DialogHeader>
-                  <DialogTitle className="flex items-center gap-4">
-                    <Avatar className="h-16 w-16">
-                      <AvatarImage src={PlaceHolderImages.find(p => p.id === selectedMember.image)?.imageUrl} alt={selectedMember.name} />
-                      <AvatarFallback>{selectedMember.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <div className="font-headline text-2xl">{selectedMember.name}</div>
-                      <p className="text-base font-medium text-primary">{selectedMember.role}</p>
+                        <div>
+                          <div className="font-headline text-2xl">{member.name}</div>
+                          <p className="text-base font-medium text-primary">{member.role}</p>
+                        </div>
+                      </DialogTitle>
+                    </DialogHeader>
+                    <div className="prose prose-sm max-w-none max-h-[60vh] overflow-y-auto text-muted-foreground pr-4">
+                      <p>{member.bio}</p>
                     </div>
-                  </DialogTitle>
-                </DialogHeader>
-                <div className="prose prose-sm max-w-none max-h-[60vh] overflow-y-auto text-muted-foreground pr-4">
-                   <p>{selectedMember.bio}</p>
-                </div>
-                <DialogClose asChild>
-                  <Button type="button" variant="secondary" className="mt-4">
-                    {t('close')}
-                  </Button>
-                </DialogClose>
-              </DialogContent>
-            )}
-          </Dialog>
+                    <DialogClose asChild>
+                      <Button type="button" variant="secondary" className="mt-4">
+                        {t('close')}
+                      </Button>
+                    </DialogClose>
+                  </DialogContent>
+                </Dialog>
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>
   );
 }
-
-    

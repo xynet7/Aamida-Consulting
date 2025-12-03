@@ -157,5 +157,3 @@ const educationItems = [
     </div>
   );
 }
-
-    
