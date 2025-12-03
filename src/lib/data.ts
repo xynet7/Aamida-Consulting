@@ -8,12 +8,12 @@ export interface NavItem {
   subItems?: NavItem[];
 }
 
-export const navItems: NavItem[] = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about" },
-  { title: "Why India", href: "/why-india" },
+export const navItems = (t: (key: string) => string): NavItem[] => [
+  { title: t('home'), href: "/" },
+  { title: t('aboutUs'), href: "/about" },
+  { title: t('whyIndia'), href: "/why-india" },
   { 
-    title: "Our Services", 
+    title: t('ourServices'), 
     href: "/our-services",
     subItems: [
       { title: "Services", href: "/our-services#services" },
@@ -22,9 +22,9 @@ export const navItems: NavItem[] = [
       { title: "Education", href: "/our-services#education" },
     ]
   },
-  { title: "Key Sectors", href: "/sectors" },
-  { title: "Blog", href: "/blog" },
-  { title: "Contact Us", href: "/contact" },
+  { title: t('keySectors'), href: "/sectors" },
+  { title: t('blog'), href: "/blog" },
+  { title: t('contactUs'), href: "/contact" },
 ];
 
 export interface Service {

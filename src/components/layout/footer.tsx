@@ -1,8 +1,12 @@
+
+"use client";
+
 import Link from "next/link";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
 import { Logo } from "@/components/logo";
-import { navItems } from "@/lib/data";
+import { navItems as getNavItems } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/hooks/use-translation";
 
 export function Footer() {
   const socialLinks = [
@@ -10,6 +14,9 @@ export function Footer() {
     { name: "Twitter", icon: Twitter, href: "#" },
     { name: "LinkedIn", icon: Linkedin, href: "#" },
   ];
+  const { t } = useTranslation();
+  const navItems = getNavItems(t);
+
 
   return (
     <footer className="bg-secondary text-secondary-foreground">

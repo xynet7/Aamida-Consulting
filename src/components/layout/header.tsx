@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -20,15 +21,20 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Logo } from "@/components/logo";
-import { navItems } from "@/lib/data";
+import { navItems as getNavItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { useTranslation } from "@/hooks/use-translation";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const pathname = usePathname();
+  const { t } = useTranslation();
+  const navItems = getNavItems(t);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,9 +125,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeToggle />
           <Button asChild>
-            <Link href="/blog">BLOG</Link>
+            <Link href="/blog">{t('blog')}</Link>
           </Button>
           <div className="md:hidden">
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -185,7 +192,7 @@ export function Header() {
                   </nav>
                   <div className="mt-auto border-t p-4">
                     <Button asChild className="w-full" onClick={closeMobileMenu}>
-                      <Link href="/blog">BLOG</Link>
+                      <Link href="/blog">{t('blog')}</Link>
                     </Button>
                   </div>
                 </div>
