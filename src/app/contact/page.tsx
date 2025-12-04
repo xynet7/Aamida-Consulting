@@ -20,19 +20,19 @@ export default function ContactPage() {
     {
       Icon: Mail,
       title: t('email'),
-      value: "info@aamidaconsulting.com",
-      href: "mailto:info@aamidaconsulting.com",
+      value: "info@aamidaconsulting.in",
+      href: "mailto:info@aamidaconsulting.in",
     },
     {
       Icon: Phone,
       title: t('phone'),
-      value: "+91 80108 81075",
-      href: "tel:+918010881075",
+      value: "+91 9267919281",
+      href: "tel:+919267919281",
     },
     {
       Icon: MapPin,
       title: t('address'),
-      value: "Plot No. 15, Vasantnagar, near Ganesh mandir, Adai, Panvel, Navi Mumbai, Raigad, Maharashtra 410206",
+      value: "218-219, T3, Golden I, Techzone 4 Greater Noida West, Greater Noida, Uttar Pradesh, PIN Code: 201318",
     },
   ];
 
@@ -105,3 +105,4 @@ export default function ContactPage() {
     </div>
   );
 }
+
